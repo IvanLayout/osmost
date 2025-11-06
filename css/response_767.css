@@ -172,6 +172,16 @@
 		padding: 36px 15px 30px;
 	}
 
+	.application__bg{
+		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_mob2);
+		clip-path: url(../images/sprite.svg#roundedPoly_mob2);
+	}
+
+	.application__col:nth-child(odd) .application__bg{
+		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_mob);
+		clip-path: url(../images/sprite.svg#roundedPoly_mob);
+	}
+
 	.application__item
 	{
 		width: 350px;
@@ -203,9 +213,25 @@
 		padding-bottom: 30px;
 	}
 
-	.advantages__item
+	.advantages__items
 	{
-		width: 100%;
+		columns: 1;
+		column-gap: 0;
+	}
+
+	.advantages__box{
+		min-height: 1px;
+		height: auto !important;
+	}
+
+	.advantages__name{
+		margin-top: 10px;
+		min-height: 43px;
+		line-height: 1.1;
+	}
+
+	.advantages__desc{
+		margin-top: 10px;
 	}
 
 
@@ -247,6 +273,11 @@
 		max-width: 100%;
 	}
 
+
+	.test-drive__bg{
+		clip-path: url('../images/sprite.svg#waveClip_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClip_mob');
+	}
 
 	.test-drive__img 
 	{

@@ -1,14 +1,6 @@
 // Ширина окна для ресайза
 WW = window.innerWidth || document.clientWidth || document.querySelector('body')[0].clientWidth
 
-// Моб. версия
-fakeResize = false
-fakeResize2 = true
-
-if (document.body.clientWidth < 320) {
-	document.getElementsByTagName('meta')['viewport'].content = 'width=320, user-scalable=no'
-}
-
 $(() => {
 	
 });
@@ -18,11 +10,23 @@ $(window).on('load', () => {
 	if ($('.application__slider').length){
 		applicationSlider()
 	}
+
+	$('.advantages__items .advantages__box').height('auto')
+	setTimeout(function(){
+		setHeight($('.advantages__items .advantages__box'))
+	}, 100)
 });
 
 
 $(window).on('resize', () => {
-	
+	if ($('.application__slider').length){
+		applicationSlider()
+	}
+
+	$('.advantages__items .advantages__box').height('auto')
+	setTimeout(function(){
+		setHeight($('.advantages__items .advantages__box'))
+	}, 100)
 });
 
 function applicationSlider(){
@@ -52,7 +56,13 @@ function applicationSlider(){
 			}
 		})
 	} else if ($(window).width() > 767 && $('.application__slider').hasClass('swiper-initialized')) {
-		approachSwiper.destroy(true, true)
+		if ($('.application__slider').length === 1 && $('.application__slider').hasClass('swiper-initialized')) {
+			approachSwiper.destroy(true, true)
+		} else if ($('.application__slider').length >= 2 && $('.application__slider').hasClass('swiper-initialized')) {
+			approachSwiper.forEach(function (element) {
+				element.destroy(true, true)
+			})
+		}
 
 		$('.application__slider').removeClass('swiper')
 		$('.application__items').removeClass('swiper-wrapper').addClass('_flex')

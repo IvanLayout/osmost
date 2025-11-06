@@ -180,8 +180,7 @@
 		margin-left: 0;
 	}
 
-	.application__cols
-	{
+	.application__marg{
 		margin-top: 27px;
 	}
 
@@ -227,23 +226,18 @@
 		padding: 10px 52px 57px 35px;
 	}
 
-	.application__bg::before
+	/* .application__bg::before
 	{
 		clip-path: url('../images/shape1_mob.svg#waveClip');
 		-webkit-clip-path: url('../images/shape1_mob.svg#waveClip');
-	}
+	} */
 
-	.application__col:nth-child(3) .application__bg
-	{
-		/* clip-path: url('../images/shape2_mob.svg#waveClip'); */
-	}
-
-	.application__col:nth-child(3) .application__bg::before
+	/* .application__col:nth-child(3) .application__bg::before
 	{
 		background: #2A232B;
 		clip-path: url('../images/shape2_mob.svg#waveClip');
 		-webkit-clip-path: url('../images/shape2_mob.svg#waveClip');
-	}
+	} */
 
 	.application__name
 	{
@@ -265,13 +259,12 @@
 	.advantages__items
 	{
 		margin-top: 5px;
+		column-gap: 16px;
 	}
 
 	.advantages__item
 	{
-		width: calc(50% - 7.5px);
 		padding-left: 39px;
-		margin-top: 20px;
 	}
 
 	.advantages__name
@@ -449,7 +442,6 @@
 		display: none;
 	}
 
-
 	.test-drive__top
 	{
 		text-align: left;
@@ -476,6 +468,8 @@
 	{
 		margin-top: 315px;
 		padding: 47px 25px 18px;
+		clip-path: url('../images/sprite.svg#waveClip_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClip_tablet');
 	}
 
 	.affiliate-form__top 
@@ -509,13 +503,6 @@
 		width: 200px;
 		order: 4;
 		margin-top: 28px;
-	}
-
-
-	.test-drive__bg
-	{
-		clip-path: url('../images/shape3_mob.svg#waveClip');
-		-webkit-clip-path: url('../images/shape3_mob.svg#waveClip');
 	}
 
 

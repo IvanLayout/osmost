@@ -85,8 +85,6 @@
 	.advantages__item
 	{
 		padding-left: 35px;
-		width: calc(50% - 5px);
-		margin-top: 10px;
 	}
 
 	.advantages__box
