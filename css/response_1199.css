@@ -1,0 +1,175 @@
+@media (max-width: 1199px)
+{
+	.cont
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.main-title 
+	{
+		font-size: 34px;
+	}
+
+
+	.header__logo 
+	{
+		max-width: 130px;
+	}
+
+	.nav-menu__item 
+	{
+		font-size: 13px;
+	}
+
+	.nav-menu__item + .nav-menu__item 
+	{
+		margin-left: 10px;
+	}
+
+	.header__search 
+	{
+		width: 30px;
+		height: 30px;
+	}
+
+	.header .socials 
+	{
+		margin: -5px 0 0 -5px;
+	}
+
+	.header .socials-link 
+	{
+		width: 30px;
+		height: 30px;
+
+		margin: 5px 0 0 5px;
+	}
+
+	.header__phone 
+	{
+		font-size: 14px;
+	}
+
+
+	.first-section__title
+	{
+		font-size: 40px;
+	}
+
+	.first-section__wrap
+	{
+		width: 59%;
+	}
+
+
+	.application__title
+	{
+		font-size: 28px;
+	}
+
+	.application__col 
+	{
+		width: calc(50% - 5px);
+	}
+
+	.application__bg
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.application__item
+	{
+		font-size: 20px;
+	}
+
+
+	.advantages
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.advantages__col 
+	{
+		width: calc(65% - 10px);
+	}
+
+	.advantages__col:nth-child(2) 
+	{
+		width: calc(35% - 0px);
+		padding-left: 0;
+	}
+
+	.advantages__name 
+	{
+		font-size: 20px;
+	}
+
+
+	.software__grid 
+	{
+		grid-template-columns: calc(32% - 5px) calc(32% - 5px) calc(36% - 10px);
+	}
+
+	.software__item
+	{
+		padding: 20px;
+	}
+
+	.software__name 
+	{
+		font-size: 21px;
+	}
+
+	.software__btns
+	{
+		margin-left: -20px;
+		margin-top: 15px;
+	}
+
+	.software__btn
+	{
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+
+
+	.technical__top
+	{
+		max-width: none;
+		width: 60%;
+	}
+
+	.technical__name 
+	{
+		font-size: 20px;
+	}
+
+	/*------------
+		commit
+	------------*/
+
+
+	/*------------
+		footer
+	------------*/
+	
+	.footer__colr 
+	{
+		width: calc(100% - 250px);
+		padding-left: 25px;
+	}
+
+
+	.footer-menu__item + .footer-menu__item 
+	{
+		margin-left: 15px;
+	}
+
+	.footer__contacts-box + .footer__contacts-box 
+	{
+		margin-left: 70px;
+	}
+}

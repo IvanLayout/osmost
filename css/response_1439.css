@@ -1,0 +1,31 @@
+@media (max-width: 1439px)
+{
+    .header__phone
+	{
+		font-size: 18px;
+	}
+
+    .application__item
+	{
+		font-size: 24px;
+	}
+
+	.advantages__name
+	{
+		font-size: 24px;
+	}
+
+	.technical__name
+	{
+		font-size: 24px;
+	}
+
+	.software__name
+	{
+		font-size: 24px;
+	}
+
+	/*------------
+		commit
+	------------*/
+}

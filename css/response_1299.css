@@ -1,0 +1,151 @@
+@media (max-width: 1299px)
+{
+	._marg
+	{
+		margin-top: 80px;
+	}
+
+	.header__logo 
+	{
+		max-width: 180px;
+	}
+
+	.nav-menu__item + .nav-menu__item 
+	{
+		margin-left: 15px;
+	}
+
+	.socials-link
+	{
+		width: 35px;
+		height: 35px;
+		padding: 5px;
+	}
+
+	.header__phone 
+	{
+		font-size: 16px;
+	}
+
+
+	.main-title
+	{
+		font-size: 36px;
+	}
+
+	.sub-title
+	{
+		font-size: 18px;
+	}
+
+
+	.bg-section
+	{
+		padding-top: 30px;
+		padding-bottom: 60px;
+	}
+
+
+	.application__col
+	{
+		width: calc(50% - 10px);
+	}
+
+	.application__bg
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 25px;
+	}
+
+	.application__item
+	{
+		margin-top: 10px;
+		width: calc(50% - 5px);
+		font-size: 23px;
+	}
+
+
+	.advantages
+	{
+		margin-top: 60px;
+		padding-top: 35px;
+	}
+	
+	.advantages__col 
+	{
+		width: calc(60% - 10px);
+	}
+
+	.advantages__col:nth-child(2)
+	{
+		width: calc(40% - 10px);
+	}
+
+	.advantages__item
+	{
+		padding-left: 35px;
+		width: calc(50% - 5px);
+		margin-top: 10px;
+	}
+
+	.advantages__box
+	{
+		min-height: 190px;
+	}
+
+	.advantages__name 
+	{
+		font-size: 23px;
+	}
+
+
+	.software
+	{
+		margin-top: 80px;
+	}
+
+	.software__grid 
+	{
+		grid-template-columns: calc(31% - 5px) calc(31% - 5px) calc(38% - 10px);
+		gap: 10px;
+	}
+
+	.software__name
+	{
+		font-size: 23px;
+	}
+
+
+	.technical__items
+	{
+		margin-left: -10px;
+		margin-top: 25px;
+	}
+
+	.technical__item 
+	{
+		width: calc(100% / 3 - 10px);
+		margin: 10px 0 0 10px;
+		padding-right: 80px;
+	}
+
+	.test-drive__img
+	{
+		margin-left: 0;
+	}
+
+	/*------------
+		commit
+	------------*/
+
+
+	/*------------
+		footer
+	------------*/
+
+	.footer-menu
+	{
+		justify-content: space-between;
+	}
+}
