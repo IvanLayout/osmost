@@ -49,6 +49,21 @@ $(() => {
 		$('.header__wrap').removeClass('_show')
 	})
 
+	// Показать все
+	$('body').on('click', '.integ-equipment__all', function (e) {
+		e.preventDefault()
+
+		if ($(this).hasClass('_active')) {
+			$(this).removeClass('_active')
+
+			$(this).closest('.integ-equipment__manufacturer').find('._hide').removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+
+			$(this).closest('.integ-equipment__manufacturer').find('._hide').addClass('_show')
+		}
+	})
+
 	// Табы
 	var locationHash = window.location.hash
 

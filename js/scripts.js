@@ -2,7 +2,51 @@
 WW = window.innerWidth || document.clientWidth || document.querySelector('body')[0].clientWidth
 
 $(() => {
-	
+	if ($('.integ-equipment__slider').length) {
+		new Swiper('.integ-equipment__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 16,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 46,
+					slidesPerView: 3,
+				}
+			},
+			on: {
+				init: function (swiper) {
+					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
+				},
+			}
+		})
+	}
 });
 
 
