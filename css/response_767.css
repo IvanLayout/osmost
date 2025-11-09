@@ -105,6 +105,36 @@
 	}
 
 
+	.tabs-app__button{
+		font-size: 14px;
+		line-height: 17px;
+		padding: 10px 8px 10px 10px;
+		flex-grow: 0;
+
+		border-radius: 10px 0 0 0;
+	}
+
+	.tabs-app__button:nth-child(2)::before{
+		width: 20px;
+
+		border-radius: 10px 0 0 0;
+	}
+
+	.tabs-app__button + .tabs-app__button {
+		margin-left: 20px;
+	}
+
+	.tabs-app__button::after{
+		width: 23px;
+		background-image: url(../images/tab_bg_grey_mob.svg);
+	}
+
+	.tabs-app__button._active::after
+	{
+		background-image: url(../images/tab_bg_mob.svg);
+	}
+
+
 	.first-section__title 
 	{
 		font-size: 34px;
@@ -172,12 +202,12 @@
 		padding: 36px 15px 30px;
 	}
 
-	.application__bg{
+	.application__bg:before{
 		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_mob2);
 		clip-path: url(../images/sprite.svg#roundedPoly_mob2);
 	}
 
-	.application__col:nth-child(odd) .application__bg{
+	.application__col:nth-child(odd) .application__bg:before{
 		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_mob);
 		clip-path: url(../images/sprite.svg#roundedPoly_mob);
 	}

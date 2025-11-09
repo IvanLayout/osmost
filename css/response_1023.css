@@ -97,7 +97,8 @@
 	.first-section
 	{
 		padding-top: 35px;
-		padding-bottom: 27px;
+		padding-bottom: 47px;
+		margin-bottom: -20px;
 	}
 
 	.first-section__wrap
@@ -222,22 +223,18 @@
 
 	.application__bg
 	{
-		/* clip-path: url('../images/shape1_mob.svg#waveClip'); */
 		padding: 10px 52px 57px 35px;
 	}
 
-	/* .application__bg::before
-	{
-		clip-path: url('../images/shape1_mob.svg#waveClip');
-		-webkit-clip-path: url('../images/shape1_mob.svg#waveClip');
-	} */
+	.application__bg:before{
+		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_tablet2);
+		clip-path: url(../images/sprite.svg#roundedPoly_tablet2);
+	}
 
-	/* .application__col:nth-child(3) .application__bg::before
-	{
-		background: #2A232B;
-		clip-path: url('../images/shape2_mob.svg#waveClip');
-		-webkit-clip-path: url('../images/shape2_mob.svg#waveClip');
-	} */
+	.application__col:nth-child(odd) .application__bg:before{
+		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_tablet);
+		clip-path: url(../images/sprite.svg#roundedPoly_tablet);
+	}
 
 	.application__name
 	{
