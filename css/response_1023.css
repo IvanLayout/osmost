@@ -97,7 +97,8 @@
 	.first-section
 	{
 		padding-top: 35px;
-		padding-bottom: 27px;
+		padding-bottom: 47px;
+		margin-bottom: -20px;
 	}
 
 	.first-section__wrap

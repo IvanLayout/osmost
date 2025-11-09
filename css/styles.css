@@ -1998,7 +1998,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	width: 72px;
 	height: 100%;
 
-	background: url(../images/tab_bg_grey.svg) 100% 0 no-repeat;
+	background: url(../images/tab_bg_grey.svg) 100% 0/auto 101% no-repeat;
 }
 
 .tabs-app__button._active::after

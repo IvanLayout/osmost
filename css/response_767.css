@@ -126,7 +126,6 @@
 
 	.tabs-app__button::after{
 		width: 23px;
-		background-size: auto 100%;
 		background-image: url(../images/tab_bg_grey_mob.svg);
 	}
 
