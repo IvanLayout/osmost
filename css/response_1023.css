@@ -5,6 +5,13 @@
 		margin-top: 60px;
 	}
 
+
+	.text-block h2
+	{
+		font-size: 32px;
+	}
+
+	
 	.main-title 
 	{
 		font-size: 38px;
@@ -22,11 +29,44 @@
 		font-weight: 500;
 	}
 
+	.page-title
+	{
+		font-size: 38px;
+	}
+
+	.page-title br
+	{
+		display: none;
+	}
+
+
 	.btn-red._pad 
 	{
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
+	.breadcrumbs
+	{
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-size: 12px;
+		line-height: 1.2;
+	}
+
+	.page-top__flex
+	{
+		display: block;
+	}
+
+	.page-top__info
+	{
+		margin-left: 0;
+		width: 100%;
+		margin-top: 25px;
+	}
+
+
 
 	.header
 	{
@@ -461,15 +501,19 @@
 		top: 126px;
 	}
 
-	.test-drive__bg
+	.main-form
 	{
-		margin-top: 315px;
 		padding: 47px 25px 18px;
 		clip-path: url('../images/sprite.svg#waveClip_tablet');
 		-webkit-clip-path: url('../images/sprite.svg#waveClip_tablet');
 	}
+	
+	.main-form_marg
+	{
+		margin-top: 315px;
+	}
 
-	.affiliate-form__top 
+	.affiliate-form__top._max-width
 	{
 		max-width: 480px;
 	}
@@ -506,6 +550,53 @@
 	.section-map__bg
 	{
 		border-radius: 15px
+	}
+
+
+	.integ-equipment_marg
+	{
+		margin-top: 60px;
+	}
+
+	.integ-equipment__slider
+	{
+		overflow: visible;
+	}
+
+	.integ-equipment__slider .swiper-slide
+	{
+		width: 436px;
+	}
+
+	.integ-equipment__name
+	{
+		font-size: 28px;
+	}
+
+	.integ-equipment__manufacturer
+	{
+		font-size: 20px;
+	}
+
+	.integ-equipment__manufacturer::before 
+	{
+		top: 7px;
+	}
+
+	.integ-equipment__desc
+	{
+		font-size: 16px;
+	}
+
+
+	.sale-conditions__item
+	{
+		width: 450px;
+	}
+
+	.sale-conditions__box 
+	{
+		padding: 25px 54px 25px 25px;
 	}
 
 	/*------------

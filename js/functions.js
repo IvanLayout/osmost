@@ -56,13 +56,29 @@ $(() => {
 		if ($(this).hasClass('_active')) {
 			$(this).removeClass('_active')
 
-			$(this).closest('.integ-equipment__manufacturer').find('._hide').removeClass('_show')
+			$(this).closest('.integ-equipment__manufacturers').find('._hide').removeClass('_show')
 		} else {
 			$(this).addClass('_active')
 
-			$(this).closest('.integ-equipment__manufacturer').find('._hide').addClass('_show')
+			$(this).closest('.integ-equipment__manufacturers').find('._hide').addClass('_show')
 		}
 	})
+
+	if ( $(window).width() < 1025 ) {
+		$('body').on('click', '.header__menu-link_active', function (e) {
+			e.preventDefault()
+
+			if ($(this).hasClass('active')){
+				$(this).removeClass('active')
+
+				$(this).closest('.header__menu-item').find('.header__sub-menu').slideUp()
+			} else {
+				$(this).addClass('active')
+
+				$(this).closest('.header__menu-item').find('.header__sub-menu').slideDown()
+			}
+		})
+	}
 
 	// Табы
 	var locationHash = window.location.hash

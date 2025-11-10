@@ -5,6 +5,16 @@
 		margin-top: 50px;
 	}
 
+	.breadcrumbs
+	{
+		margin-top: 15px;
+	}
+
+	.text-block h2 
+	{
+		font-size: 28px;
+	}
+
 	.main-title
 	{
 		font-size: 34px;
@@ -20,6 +30,12 @@
 		font-size: 18px;
 		line-height: 1.35;
 	}
+
+	.page-title 
+	{
+		font-size: 32px;
+	}
+
 
 	.header
 	{
@@ -304,7 +320,7 @@
 	}
 
 
-	.test-drive__bg{
+	.main-form{
 		clip-path: url('../images/sprite.svg#waveClip_mob');
 		-webkit-clip-path: url('../images/sprite.svg#waveClip_mob');
 	}
@@ -317,6 +333,49 @@
 	}
 
 
+	.page-top__info
+	{
+		padding: 15px;
+		border-radius: 5px;
+	}
+	
+
+	.integ-equipment_marg
+	{
+		margin-top: 50px;
+	}
+
+	.integ-equipment__slider .swiper-slide 
+	{
+		width: 400px;
+	}
+
+	.integ-equipment__name 
+	{
+		font-size: 26px;
+	}
+
+	.integ-equipment__manufacturer 
+	{
+		font-size: 18px;
+	}
+
+	.integ-equipment__manufacturer::before
+	{
+		top: 4px;
+	}
+
+
+	.sale-conditions__item
+	{
+		width: 350px;
+	}
+
+	.sale-conditions__box
+	{
+		padding: 20px;
+	}
+	
 	/*------------
 		commit
 	------------*/

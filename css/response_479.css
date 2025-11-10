@@ -5,6 +5,18 @@
 		font-size: 14px;
 	}
 
+	.page-title
+	{
+		font-size: 24px;
+	}
+
+
+	.text-block p
+	{
+		margin-bottom: 10px;
+	}
+
+
 	.form__line
 	{
 		margin-bottom: 18px;
@@ -373,7 +385,7 @@
 		top: 180px;
 	}
 
-	.test-drive__bg
+	.main-form
 	{
 		padding: 35px 15px 24px;
 	}
@@ -401,6 +413,75 @@
 	.affiliate-form__flex .form__submit-btn
 	{
 		margin-top: 20px;
+	}
+
+
+	.page-top__info
+	{
+		padding: 10px;
+	}
+
+
+	.integ-equipment__slider
+	{
+		padding-bottom: 50px;
+	}
+
+	.integ-equipment__slider .swiper-slide 
+	{
+		width: 300px;
+	}
+
+	.integ-equipment__slider .slider-button-prev, 
+	.integ-equipment__slider .slider-button-next
+	{
+		top: auto;
+		bottom: 0;
+	}
+
+	.integ-equipment__slider .slider-button-prev
+	{
+		left: 50%;
+		margin-left: -32.5px;
+	}
+
+	.integ-equipment__slider .slider-button-next
+	{
+		right: 50%;
+		margin-right: -32.5px;
+	}
+
+	.integ-equipment__name 
+	{
+		font-size: 20px;
+	}
+
+	.integ-equipment__img
+	{
+		padding: 15px;
+	}
+
+	.integ-equipment__manufacturer
+	{
+		font-size: 16px;
+		line-height: 1.35;
+		margin-top: 5px;
+		width: calc(50% - 2.5px);
+	}
+
+	.integ-equipment__manufacturer::before
+	{
+		top: 7px;
+	}
+
+	.integ-equipment__bot
+	{
+		margin-top: 25px;
+	}
+
+	.integ-equipment__desc
+	{
+		font-size: 14px;
 	}
 
 	/*------------

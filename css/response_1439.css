@@ -25,6 +25,23 @@
 		font-size: 24px;
 	}
 
+
+	.integ-equipment__manufacturer
+	{
+		font-size: 18px;
+	}
+
+	.integ-equipment__manufacturer::before
+	{
+		top: 4px;
+	}
+
+
+	.sale-conditions__box 
+	{
+		padding: 25px 25px 30px 25px;
+	}
+
 	/*------------
 		commit
 	------------*/

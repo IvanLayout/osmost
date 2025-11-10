@@ -24,11 +24,11 @@ $(() => {
 			},
 			breakpoints: {
 				'320': {
-					spaceBetween: 16,
+					spaceBetween: 15,
 					slidesPerView: 'auto'
 				},
 				'480': {
-					spaceBetween: 16,
+					spaceBetween: 15,
 					slidesPerView: 'auto'
 				},
 				'768': {
@@ -36,14 +36,71 @@ $(() => {
 					slidesPerView: 'auto'
 				},
 				'1024': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'1300': {
+					spaceBetween: 30,
+					slidesPerView: 3,
+				},
+				'1440': {
 					spaceBetween: 46,
 					slidesPerView: 3,
-				}
+				},
+			}
+		})
+	}
+
+	if ($('.sale-conditions__slider').length) {
+		new Swiper('.sale-conditions__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'1300': {
+					spaceBetween: 25,
+					slidesPerView: 3,
+				},
+				'1440': {
+					spaceBetween: 25,
+					slidesPerView: 3,
+				},
 			},
 			on: {
 				init: function (swiper) {
 					$(swiper.el).find('.swiper-wrapper').wrap('<div class="swiper-overflow"></div>')
-				},
+				}
 			}
 		})
 	}
