@@ -518,6 +518,19 @@
 		margin-left: -10px;
 	}
 
+	.products__grid{
+		margin: -15px 0 0;
+	}
+
+	.products__grid .product{
+		margin-left: 0;
+		width: 100%;
+	}
+
+	.product{
+		padding: 15px;
+	}
+
 
 	/*------------
 		footer

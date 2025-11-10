@@ -637,6 +637,21 @@
 	}
 
 
+	.products__grid{
+		margin: -28px 0 0 -28px;
+	}
+
+	.products__grid .product{
+		margin: 28px 0 0 28px;
+		width: calc(100%/2 - 28px);
+	}
+
+
+	.pagintion{
+		margin-top: 35px;
+	}
+
+
 	/*------------
 		footer
 	------------*/
