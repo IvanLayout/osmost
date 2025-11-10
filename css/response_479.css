@@ -487,6 +487,36 @@
 	/*------------
 		commit
 	------------*/
+	.products-grup__colr{
+		height: 170px;
+		padding: 10px;
+	}
+
+	.products-grup__title{
+		font-size: 20px;
+	}
+
+	.products-grup__desc{
+		margin-top: 5px;
+		font-size: 14px;
+	}
+
+
+	.views{
+		flex-wrap: wrap;
+	}
+
+	.views__name{
+		margin-right: 0;
+		font-size: 12px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+	.views__flex{
+		width: calc(100% + 10px);
+		margin-left: -10px;
+	}
 
 
 	/*------------

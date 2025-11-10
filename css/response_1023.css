@@ -56,7 +56,15 @@
 
 	.page-top__flex
 	{
-		display: block;
+		flex-wrap: wrap;
+	}
+
+	.page-title{
+		width: 100%;
+	}
+
+	.page-title_big {
+		width: calc(100% - 230px);
 	}
 
 	.page-top__info
@@ -602,6 +610,31 @@
 	/*------------
 		commit
 	------------*/
+	.products-grup_marg{
+		margin-top: 25px;
+	}
+
+	.products-grup__item{
+		flex-wrap: wrap;
+	}
+
+	.products-grup__item + .products-grup__item{
+		margin-top: 25px;
+	}
+
+	.products-grup__coll{
+		width: 100%;
+	}
+
+	.products-grup__wrap{
+		max-width: none;
+	}
+
+	.products-grup__colr{
+		width: 100%;
+		max-width: none;
+		margin: 25px 0 0;
+	}
 
 
 	/*------------
