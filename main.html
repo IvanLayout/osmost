@@ -68,7 +68,7 @@
 						</div>
 
 						<div class="header__search">
-							<button type="button" class="header__search-btn">
+							<button type="button" data-content="#modal-search" class="header__search-btn modal-small-btn">
 								<img data-src="images/ic_lupa.png" src="images/img_plug.png" alt="" class="lazyload">
 							</button>
 						</div>
@@ -79,7 +79,7 @@
 					</div>
 
 					<div class="header__search">
-						<button type="button" class="header__search-btn">
+						<button type="button" data-content="#modal-search" class="header__search-btn modal-small-btn">
 							<img data-src="images/ic_lupa.png" src="images/img_plug.png" alt="" class="lazyload">
 						</button>
 					</div>
@@ -109,6 +109,26 @@
 				</div>
 			</header>
 
+			<div id="modal-search" class="modal-search modal-wrap">
+				<div class="modal-search__wrap modal-wrap__scroll">
+					<div class="modal-block modal-search__top">
+						<div class="modal-search__flex _flex">
+							<form action="" class="form-search _flex">
+								<input type="text" value="" placeholder="Поиск по сайту" class="form-search__input">
+
+								<button type="submit" class="form-search__btn">
+									<img data-src="images/ic_lupa.png" src="images/img_plug.png" alt="" class="lazyload">
+								</button>
+							</form>
+							<button type="button" class="modal-block__close">
+								<svg>
+									<use xlink:href="images/sprite.svg#close1"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- End Шапка -->
 
 			<div class="main">

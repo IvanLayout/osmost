@@ -243,6 +243,48 @@ $(window).on('load', () => {
 	
 })
 
+document.addEventListener('DOMContentLoaded', () =>{
+	document.querySelectorAll('.modal-small-btn').forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.preventDefault();
+		
+			const modal = item.getAttribute('data-content');
+
+			document.querySelector(modal).classList.add('_show');
+			document.querySelector('body').classList.add('_lock-modal');
+		});
+	});
+
+	document.querySelectorAll('.modal-block__close').forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.preventDefault();
+
+			item.closest('.modal-wrap').classList.remove('_show')
+	
+			document.querySelector('body').classList.remove('_lock-modal')
+		});
+	});
+
+	document.querySelectorAll('.modal-wrap').forEach(item => {
+		item.addEventListener('click', (e) => {
+			if ( $(e.target).closest('.modal-block').length == 0 ) {
+				item.classList.remove('_show')
+	
+				document.querySelector('body').classList.remove('_lock-modal')
+			}
+		});
+	});
+
+	document.querySelectorAll('.modal-wrap').forEach(item => {
+		item.addEventListener('click', (e) => {
+			if ( e.target === item || e.target === item.querySelector('.modal-wrap__scroll') ) {
+				item.classList.remove('_show')
+				document.querySelector('body').classList.remove('_lock-modal')
+			}
+		});
+	});
+});
+
 
 // Вспомогательные функции
 const widthScroll = () => {
