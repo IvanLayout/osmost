@@ -704,6 +704,7 @@ button
 	margin: 27px 0 45px;
 	color: #6AA589;
 	font-weight: 500;
+	font-size: 12px;
 }
 
 .breadcrumbs_sep
@@ -2286,6 +2287,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	background: none;
 }
 
+.slider-button-prev._dark.swiper-button-disabled,
+.slider-button-next._dark.swiper-button-disabled
+{
+	background: #423945;
+	border-color: #423945;
+}
+
 .swiper-button-lock
 {
     display: none;
@@ -3777,6 +3785,136 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	max-height: 100%;
 }
 
+/*------------
+    about-info
+------------*/
+
+.about-info__bg
+{
+	padding: 58px 73px;
+	background: #fff;
+	width: 100%;
+	max-width: 1129px;
+	margin: 0 auto;
+
+	clip-path: url('../images/sprite.svg#waveClip2');
+	-webkit-clip-path: url('../images/sprite.svg#waveClip2');
+}
+
+.about-info__title
+{
+	text-align: center;
+	font-size: 42px;
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+.about-info__title span
+{
+	color: #6AA589;
+}
+
+
+/*------------
+    articles
+------------*/
+
+.articles__slider
+{
+	margin-top: 25px;
+}
+
+.articles__slider .swiper-slide
+{
+	height: auto;
+}
+
+.articles__item
+{
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100%;
+}
+
+.articles__img
+{
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+.articles__img img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 333 / 296;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.articles__bg
+{
+	margin-top: 15px;
+	border-radius: 5px;
+	padding: 15px 15px 25px;
+	background: #fff;
+
+	display: flex;
+	flex-direction: column;
+
+	flex: 1 0 auto;
+}
+
+.articles__name
+{
+	font-size: 24px;
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+.articles__name a
+{
+	color: #2E2631;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.articles__name a:hover
+	{
+		color: #6AA589;
+	}
+}
+
+.articles__desc
+{
+	margin-top: 10px;
+	flex: 1 0 auto;
+}
+
+.articles__link
+{
+	margin-top: 25px;
+}
+
+.articles__link a
+{
+	color: #2E2631;
+	border-bottom: 1px solid currentColor;
+	text-decoration: none;
+	transition: border .2s linear;
+	padding-bottom: 3px;
+}
+
+@media (any-hover: hover)
+{
+	.articles__link a:hover
+	{
+		border-bottom-color: transparent;
+	}
+}
 /*------------
     commit
 ------------*/

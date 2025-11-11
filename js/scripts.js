@@ -104,6 +104,55 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.articles__slider').length) {
+		new Swiper('.articles__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'1300': {
+					spaceBetween: 22,
+					slidesPerView: 4,
+				},
+				'1440': {
+					spaceBetween: 22,
+					slidesPerView: 4,
+				},
+			}
+		})
+	}
 });
 
 
@@ -123,6 +172,10 @@ $(window).on('resize', () => {
 	if ($('.application__slider').length){
 		applicationSlider()
 	}
+
+	// if ($('.sale-conditions__slider').length){
+	// 	saleconditionsSlider()
+	// }
 
 	$('.advantages__items .advantages__box').height('auto')
 	setTimeout(function(){
@@ -170,3 +223,44 @@ function applicationSlider(){
 		$('.application__item').removeClass('swiper-slide')
 	}
 }
+
+// function saleconditionsSlider(){
+// 	if ( $(window).width() < 480 && !$('.sale-conditions__slider').hasClass('swiper-initialized') ) {
+// 		$('.sale-conditions__slider').removeClass('swiper')
+// 		$('.sale-conditions__items').removeClass('swiper-wrapper')
+// 		$('.sale-conditions__item').removeClass('swiper-slide')
+
+// 		saleconditionsSwiper = new Swiper('.sale-conditions__slider', {
+// 			loop: false,
+// 			watchSlidesProgress: true,
+// 			watchOverflow: true,
+// 			spaceBetween: 10,
+// 			slidesPerView: 'auto',
+// 			preloadImages: false,
+// 			lazy: {
+// 				loadPrevNext: true,
+// 				elementClass: 'lazyload',
+// 				enabled: true,
+// 				loadedClass: 'loaded',
+// 				checkInView: true,
+// 				loadOnTransitionStart: true
+// 			},
+// 			navigation: {
+// 				nextEl: '.slider-button-next',
+// 				prevEl: '.slider-button-prev'
+// 			}
+// 		})
+// 	} else if ($(window).width() > 479 && $('.sale-conditions__slider').hasClass('swiper-initialized')) {
+// 		if ($('.sale-conditions__slider').length === 1 && $('.sale-conditions__slider').hasClass('swiper-initialized')) {
+// 			saleconditionsSwiper.destroy(true, true)
+// 		} else if ($('.sale-conditions__slider').length >= 2 && $('.sale-conditions__slider').hasClass('swiper-initialized')) {
+// 			saleconditionsSwiper.forEach(function (element) {
+// 				element.destroy(true, true)
+// 			})
+// 		}
+
+// 		$('.sale-conditions__slider').addClass('swiper')
+// 		$('.sale-conditions__items').addClass('swiper-wrapper')
+// 		$('.sale-conditions__item').addClass('swiper-slide')
+// 	}
+// }
