@@ -607,6 +607,79 @@
 		padding: 25px 54px 25px 25px;
 	}
 
+
+	.about__item
+	{
+		width: 100%;
+	}
+
+	.about__item.about__item-img
+	{
+		padding: 50px;
+	}
+
+	.about-info__bg
+	{
+		padding: 40px 64px 35px;
+		clip-path: url('../images/sprite.svg#waveClip2_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClip2_tablet');
+	}
+
+	.about-info__title
+	{
+		font-size: 32px;
+	}
+
+	.about-info__title br
+	{
+		display: none;
+	}
+
+
+	.articles__slider .swiper-slide
+	{
+		width: 333px;
+	}
+
+	.articles__name
+	{
+		font-size: 24px;
+	}
+
+
+	.contacts__box
+	{
+		width: 100%;
+		padding: 35px;
+	}
+
+	.contacts__info
+	{
+		font-size: 28px;
+	}
+
+	.contacts__map
+	{
+		width: 100%;
+		margin-top: 20px;
+		height: 434px;
+	}
+
+
+	.history__slider .slider-button-next._top
+	{
+		top: 50%;
+		right: 10px;
+		margin-top: -70px;
+	}
+
+	.history__slider .slider-button-prev._top
+	{
+		top: 50%;
+		right: 100%;
+		left: 10px;
+		margin-top: -70px;
+	}
 	/*------------
 		commit
 	------------*/

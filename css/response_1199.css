@@ -178,6 +178,39 @@
 		padding: 20px;
 	}
 
+
+	.about-info__title 
+	{
+		font-size: 36px;
+	}
+
+
+	.articles__name
+	{
+		font-size: 23px;
+	}
+
+
+	.history__name 
+	{
+		font-size: 28px;
+	}
+
+
+	.contacts__box
+	{
+		padding: 25px;
+	}
+
+	.contacts__item
+	{
+		width: calc(50% - 10px);
+	}
+
+	.contacts__info 
+	{
+		font-size: 24px;
+	}
 	/*------------
 		commit
 	------------*/

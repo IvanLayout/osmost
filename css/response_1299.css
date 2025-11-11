@@ -148,6 +148,18 @@
 	{
 		font-size: 14px;
 	}
+
+
+	.about-info__title
+	{
+		font-size: 40px;
+	}
+
+
+	.contacts__info
+	{
+		font-size: 26px;
+	}
 	/*------------
 		commit
 	------------*/

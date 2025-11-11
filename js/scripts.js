@@ -139,11 +139,11 @@ $(() => {
 					slidesPerView: 'auto'
 				},
 				'1024': {
-					spaceBetween: 15,
+					spaceBetween: 22,
 					slidesPerView: 3,
 				},
 				'1300': {
-					spaceBetween: 22,
+					spaceBetween: 15,
 					slidesPerView: 4,
 				},
 				'1440': {
@@ -188,8 +188,8 @@ $(() => {
 					slidesPerView: 'auto'
 				},
 				'1024': {
-					spaceBetween: 15,
-					slidesPerView: 3,
+					spaceBetween: 20,
+					slidesPerView: 2,
 				},
 				'1300': {
 					spaceBetween: 20,

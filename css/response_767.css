@@ -375,6 +375,69 @@
 	{
 		padding: 20px;
 	}
+
+
+	.about__item
+	{
+		border-radius: 10px;
+	}
+
+	.about__item + .about__item
+	{
+		margin-top: 15px;
+	}
+
+
+	.about-info__bg
+	{
+		padding: 25px 20px;
+	}
+
+	.about-info__title 
+	{
+		font-size: 24px;
+	}
+
+
+	.history__slider .slider-button-next._top,
+	.history__slider .slider-button-prev._top
+	{
+		margin-top: -115px;
+	}
+
+	.history__name 
+	{
+		font-size: 26px;
+	}
+
+
+	.contacts__box
+	{
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	.contacts__item
+	{
+		margin-top: 20px;
+	}
+
+	.contacts__info 
+	{
+		font-size: 20px;
+		line-height: 1.1;
+	}
+
+	.contacts__desc
+	{
+		font-size: 14px;
+	}
+
+	.contacts__map
+	{
+		border-radius: 10px;
+		margin-top: 15px;
+	}
 	
 	/*------------
 		commit
