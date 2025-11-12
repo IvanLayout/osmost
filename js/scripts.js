@@ -207,6 +207,55 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.interface__slider').length) {
+		new Swiper('.interface__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				},
+				'1300': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				},
+				'1440': {
+					spaceBetween: 22,
+					slidesPerView: 3,
+				},
+			}
+		})
+	}
 });
 
 
