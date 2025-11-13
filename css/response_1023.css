@@ -241,13 +241,9 @@
 		margin-top: 15px;
 	}
 
-	.application__tabs
+	.application__tabs_mob
 	{
 		display: flex;
-		justify-content: flex-start;
-		align-items: stretch;
-		align-content: stretch;
-		flex-wrap: nowrap;
 	}
 
 	.application__col

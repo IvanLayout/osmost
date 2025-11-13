@@ -1811,11 +1811,24 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	Tabs
 ---------------*/
 
+.tabs-container_marg
+{
+	margin-top: 25px;
+}
+
 .application__tabs
 {
-	display: none;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: stretch;
+	flex-wrap: nowrap;
 	width: 100%;
     max-width: 605px;
+}
+
+.application__tabs_mob
+{
+	display: none;
 }
 
 .tabs__marg
@@ -2690,6 +2703,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
     application
 ------------*/
 
+.application_inner
+{
+	margin-top: 25px;
+}
+
 .application .main-title
 {
 	width: calc(50% - 15px);
@@ -2710,6 +2728,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .application__col
 {
 	width: calc(50% - 15px);
+}
+
+.application__bg-inner
+{
+	padding: 25px;
+	background: #F5F5F5;
+	border-radius: 0 15px 15px 15px;
 }
 
 .application__bg
@@ -2757,11 +2782,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: relative;
 }
 
+.application__bg-inner .application__slider
+{
+	margin-top: 0;
+}
+
 .application__items
 {
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
+}
+
+.application__items-inner
+{
+	justify-content: flex-start;
+	margin: -16px 0 0 -16px;
 }
 
 .application__item
@@ -2780,6 +2816,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-weight: 500;
 	color: #2E2631;
 	transition: color .2s linear, background .2s linear;
+}
+
+.application__items-inner .application__item
+{
+	width: calc(100%/4 - 16px);
+	margin-top: 16px;
+	margin-left: 16px;
 }
 
 .application__icon
@@ -2819,13 +2862,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	.application__item:hover
 	{
-		background: #6AA589;
+		background: #2E2631;
 		color: #fff;
 	}
 
-	.application__col:nth-child(even) .application__item:hover
+	.application__col:nth-child(odd) .application__item:hover
 	{
-		background: #2E2631;
+		background: #6AA589;
 	}
 }
 

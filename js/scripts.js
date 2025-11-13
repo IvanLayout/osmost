@@ -291,12 +291,12 @@ $(() => {
 					slidesPerView: 'auto'
 				},
 				'1024': {
-					spaceBetween: 20,
-					slidesPerView: 3,
+					spaceBetween: 15,
+					slidesPerView: 2,
 				},
 				'1300': {
-					spaceBetween: 20,
-					slidesPerView: 3,
+					spaceBetween: 30,
+					slidesPerView: 2,
 				},
 				'1440': {
 					spaceBetween: 30,
