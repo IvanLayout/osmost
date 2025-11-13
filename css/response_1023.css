@@ -241,6 +241,23 @@
 		margin-top: 15px;
 	}
 
+	.application__bg-inner
+	{
+		padding: 35px 35px 30px;
+	}
+
+	.application__items-inner 
+	{
+		margin: -15px 0 0 -15px;
+	}
+
+	.application__items-inner .application__item
+	{
+		width: calc(100% / 2 - 15px);
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
 	.application__tabs_mob
 	{
 		display: flex;
@@ -675,6 +692,35 @@
 		right: 100%;
 		left: 10px;
 		margin-top: -70px;
+	}
+
+
+	.app-info__item
+	{
+		width: 685px;
+		padding: 25px;
+	}
+
+	.app-info__icon
+	{
+		width: 77px;
+		height: 77px;
+	}
+
+	.app-info__info 
+	{
+		padding-left: 45px;
+		width: calc(100% - 77px);
+	}
+
+	.app-info__name
+	{
+		font-size: 28px;
+	}
+
+	.app-info__link
+	{
+		margin-top: 42px;
 	}
 	/*------------
 		commit

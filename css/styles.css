@@ -2338,6 +2338,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	border-color: #423945;
 }
 
+.slider-button-prev._dark2.swiper-button-disabled,
+.slider-button-next._dark2.swiper-button-disabled
+{
+	color: #423945;
+	border-color: #423945;
+}
+
 .swiper-button-lock
 {
     display: none;

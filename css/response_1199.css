@@ -211,6 +211,30 @@
 	{
 		font-size: 24px;
 	}
+
+
+	.app-info__item
+	{
+		padding: 20px;
+	}
+	
+	.app-info__info
+	{
+		padding-left: 30px;
+		width: calc(100% - 67px);
+	}
+
+	.app-info__icon
+	{
+		width: 67px;
+		height: 67px;
+	}
+
+	.app-info__name
+	{
+		font-size: 24px;
+	}
+	
 	/*------------
 		commit
 	------------*/

@@ -203,13 +203,10 @@
 		padding-bottom: 50px;
 	}
 
-	.application__item 
+	.application__item,
+	.application__items-inner .application__item
 	{
 		width: 227px;
-	}
-
-	.application__item
-	{
 		font-size: 20px;
 		padding-bottom: 15px;
 	}
@@ -653,6 +650,39 @@
 	.contacts__map
 	{
 		height: 224px;
+	}
+
+
+	.app-info__slider
+	{
+		padding-bottom: 55px;
+	}
+
+	.app-info__slider .slider-button-next
+	{
+		left: 35px;
+	}
+
+	.app-info__item
+	{
+		padding: 10px;
+		width: 300px;
+	}
+
+	.app-info__icon 
+	{
+		width: 60px;
+		height: 60px;
+	}
+
+	.app-info__name 
+	{
+		font-size: 20px;
+	}
+
+	.app-info__link
+	{
+		margin-top: 25px;
 	}
 	/*------------
 		commit

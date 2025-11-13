@@ -137,7 +137,7 @@
 	}
 
 	.tabs-app__button + .tabs-app__button {
-		margin-left: 20px;
+		margin-left: 19px;
 	}
 
 	.tabs-app__button::after{
@@ -218,6 +218,17 @@
 		padding: 36px 15px 30px;
 	}
 
+	.application__bg-inner
+	{
+		border-radius: 0 0 15px 15px;
+		padding: 36px 15px 30px;
+	}
+
+	.application__items-inner
+	{
+		margin: 0;
+	}
+
 	.application__bg:before{
 		-webkit-clip-path: url(../images/sprite.svg#roundedPoly_mob2);
 		clip-path: url(../images/sprite.svg#roundedPoly_mob2);
@@ -228,7 +239,8 @@
 		clip-path: url(../images/sprite.svg#roundedPoly_mob);
 	}
 
-	.application__item
+	.application__item,
+	.application__items-inner .application__item
 	{
 		width: 350px;
 		margin: 0;
@@ -438,7 +450,56 @@
 		border-radius: 10px;
 		margin-top: 15px;
 	}
-	
+
+
+	.app-info__slider
+	{
+		padding-bottom: 60px;
+	}
+
+	.app-info__slider .slider-button-next
+	{
+		top: auto;
+		bottom: 0;
+
+		left: 52px;
+	}
+
+	.app-info__slider .slider-button-prev
+	{
+		top: auto;
+		bottom: 0;
+
+		right: auto;
+		left: 0;
+	}
+
+	.app-info__item
+	{
+		padding: 20px;
+		width: 400px;
+
+		flex-direction: column;
+	}
+
+	.app-info__info
+	{
+		padding-left: 0;
+		margin-top: 25px;
+		width: 100%;
+		flex: 1 0 auto;
+		min-height: 1px;
+	}
+
+	.app-info__name
+	{
+		font-size: 26px;
+	}
+
+	.app-info__name br
+	{
+		display: none;
+	}	
 	/*------------
 		commit
 	------------*/
