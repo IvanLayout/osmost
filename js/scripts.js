@@ -256,6 +256,55 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.app-info__slider').length) {
+		new Swiper('.app-info__slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				},
+				'1300': {
+					spaceBetween: 20,
+					slidesPerView: 3,
+				},
+				'1440': {
+					spaceBetween: 30,
+					slidesPerView: 2,
+				},
+			}
+		})
+	}
 });
 
 
