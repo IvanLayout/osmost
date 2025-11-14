@@ -684,6 +684,65 @@
 	{
 		margin-top: 25px;
 	}
+
+
+	.product-info__list
+	{
+		margin-top: 15px;
+	}
+
+	.product-info__list li + li
+	{
+		margin-top: 5px;
+	}
+
+	.product-info__list li
+	{
+		font-size: 16px;
+	}
+
+	.product-info__list li::before
+	{
+		top: 6px;
+	}
+
+	.product-info__price
+	{
+		font-size: 24px;
+		margin-top: 15px;
+	}
+
+	.product-info__btns
+	{
+		margin-left: -15px;
+	}
+
+	.product-info__btn
+	{
+		margin-top: 15px;
+		margin-left: 15px;
+	}
+
+
+	.features__info
+	{
+		margin-top: 25px;
+	}
+
+	.features__top
+	{
+		padding: 15px;
+	}
+
+	.features__table tr td:first-child
+	{
+		font-size: 18px;
+	}
+
+	.features__btns
+	{
+		margin-top: -20px;
+	}
 	/*------------
 		commit
 	------------*/

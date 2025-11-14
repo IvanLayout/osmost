@@ -34,11 +34,6 @@
 		font-size: 38px;
 	}
 
-	.page-title br
-	{
-		display: none;
-	}
-
 
 	.btn-red._pad 
 	{
@@ -721,6 +716,38 @@
 	.app-info__link
 	{
 		margin-top: 42px;
+	}
+
+
+	.product-info__image
+	{
+		width: 100%;
+		max-width: 532px;
+	}
+
+	.product-info__info
+	{
+		width: 100%;
+		margin-top: 35px;
+	}
+
+	.features__item + .features__item
+	{
+		margin-top: 15px;
+	}
+
+	.features__table tr td
+	{
+		vertical-align: top;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		height: auto;
+		width: 50%;
+	}
+
+	.features__btns
+	{
+		margin-top: -15px;
 	}
 	/*------------
 		commit

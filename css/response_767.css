@@ -499,7 +499,71 @@
 	.app-info__name br
 	{
 		display: none;
-	}	
+	}
+
+
+	.product-info__info
+	{
+		margin-top: 15px;
+	}
+
+	.product-info__list
+	{
+		margin-top: 20px;
+	}
+
+	.product-info__price
+	{
+		margin-top: 25px;
+		font-size: 34px;
+	}
+
+	.product-info__btns
+	{
+		margin-top: 0;
+	}
+
+
+	.features_marg
+	{
+		margin-top: 50px;
+	}
+
+	.features__title
+	{
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.features__table tr td
+	{
+		display: block;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-right: 1px solid #423945;
+	}
+
+	.features__table tr:last-child td
+	{
+		border-bottom: none;
+	}
+
+	.features__table tr:last-child td:first-child
+	{
+		border-radius: 0;
+	}
+
+	.features__table tr:last-child td:last-child
+	{
+		border-radius: 0 0 10px 10px;
+		border-bottom: 1px solid #423945;
+	}
+
+	.features__table tr td + td
+	{
+		padding-top: 0;
+	}
 	/*------------
 		commit
 	------------*/

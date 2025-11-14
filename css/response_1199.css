@@ -235,6 +235,16 @@
 		font-size: 24px;
 	}
 	
+
+	.product-info__image 
+	{
+		width: calc(48% - 20px);
+	}
+
+	.product-info__info
+	{
+		width: calc(52% - 20px);
+	}
 	/*------------
 		commit
 	------------*/
