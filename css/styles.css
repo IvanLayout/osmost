@@ -4310,7 +4310,85 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	}
 }
 
+/*------------
+    firmware
+------------*/
 
+/*------------
+    interface-program
+------------*/
+
+.interface-program__items
+{
+	justify-content: space-between;
+}
+
+.interface-program__iteml
+{
+	width: calc(47% - 15px);
+	max-width: 570px;
+}
+
+.interface-program__itemr
+{
+	width: calc(53% - 15px);
+	max-width: 704px;
+}
+
+.interface-program__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.interface-program__title
+{
+	margin-top: 30px;
+}
+
+.interface-program__desc
+{
+	margin-top: 32px;
+	border-radius: 10px;
+	padding: 25px;
+	background: #fff;
+
+	font-size: 20px;
+	line-height: 1.1;
+	font-weight: 500;
+}
+
+.interface-program__desc a
+{
+	color: #6AA589;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.interface-program__desc a:hover
+	{
+		border-color: #6AA589;
+	}
+}
+
+.interface-program__video
+{
+	display: block;
+	position: relative;
+	text-decoration: none;
+}
+
+.interface-program__video img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 704 / 439;
+	object-fit: cover;
+}
 /*------------
     demo-version
 ------------*/
