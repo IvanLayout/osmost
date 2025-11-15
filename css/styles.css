@@ -4281,6 +4281,166 @@ input[type=checkbox]:checked + .checkbox-btn__text
     firmware
 ------------*/
 
+.firmware__items
+{
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 2fr; */
+	grid-template-columns: calc(30.5% - 12px) calc(30.5% - 12px) calc(39% - 6px);
+	grid-auto-rows: auto;
+	align-items: start;
+	color: #fff;
+
+	gap: 15px;
+}
+
+.firmware__item-first
+{
+	/* grid-column: 1; */
+}
+
+.firmware__item-mid
+{
+	/* grid-column: 2; */
+}
+
+.firmware__item-big
+{
+	grid-column: 3;
+	grid-row: 1 / 3;
+}
+
+.firmware__big-icon
+{
+	height: 98px;
+	margin-top: 17px;
+	margin-bottom: 17px;
+}
+
+.firmware__big-icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.firmware__bg-white
+{
+	padding: 25px 40px 25px 25px;
+	background: #fff;
+
+	clip-path: url('../images/sprite.svg#waveClipFirmwareWhite');
+	-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareWhite');
+
+	/* margin-top: -120px; */
+}
+
+.firmware__icon
+{
+	width: 45px;
+	height: 45px;
+	background: #F5F5F5;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	padding: 5px;
+}
+
+.firmware__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.firmware__desc
+{
+	font-size: 20px;
+	line-height: 1.1;
+	font-weight: 500;
+	margin-top: 7px;
+}
+
+.firmware__desc-big
+{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.firmware__desc-marg
+{
+	margin-top: 60px;
+}
+
+.firmware__desc-marg2
+{
+	margin-top: 78px;
+}
+
+.firmware__desc._black
+{
+	color: #2E2631;
+}
+
+.firmware__desc a
+{
+	color: #2E2631;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+	transition: border .2s linear;
+}
+
+.firmware__desc._black a
+{
+	color: #6AA589;
+}
+
+.firmware__bg-green
+{
+	padding: 25px 25px 70px;
+	background: #6AA589;
+
+	clip-path: url('../images/sprite.svg#waveClipFirmwareGreen');
+	-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGreen');
+}
+
+.firmware__bg-grey
+{
+	padding: 25px;
+	background: #423945;
+
+	clip-path: url('../images/sprite.svg#waveClipFirmwareGrey');
+	-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGrey');
+
+	/* margin-top: -30px; */
+}
+
+
+@media (any-hover: hover)
+{
+	.firmware__desc a:hover
+	{
+		border-color: #2E2631;
+	}
+
+	.firmware__desc._black a:hover
+	{
+		border-color: #6AA589;
+	}
+}
+
+.firmware__img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 534 / 541;
+	border-radius: 25px;
+	object-fit: cover;
+}
+
 /*------------
     interface-program
 ------------*/
@@ -4499,6 +4659,60 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	background: #423945;
 	width: calc(73.5% - 15px);
 	margin-top: 94px;
+
+	clip-path: url('../images/sprite.svg#waveClipFunc');
+	-webkit-clip-path: url('../images/sprite.svg#waveClipFunc');
+}
+
+.func-soft__title
+{
+	font-size: 24px;
+	line-height: 1.1;
+	font-weight: 600;
+	color: #fff;
+}
+
+.func-soft__title span
+{
+	color: #6AA589;
+}
+
+.func-soft__cols
+{
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.func-soft__col
+{
+	width: calc(50% - 15px);
+	max-width: 420px;
+}
+
+.func-soft__item
+{
+	margin-top: 12px;
+	position: relative;
+	padding-left: 19px;
+
+	font-size: 18px;
+	line-height: 1.1;
+	font-weight: 500;
+}
+
+.func-soft__item::before
+{
+	position: absolute;
+	content: '';
+	top: 6px;
+	left: 0;
+
+	display: block;
+
+	width: 9px;
+	height: 9px;
+	border-radius: 1px;
+	background: #6AA589;
 }
 
 .func-soft__video-box
