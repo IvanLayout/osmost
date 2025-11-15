@@ -10,9 +10,43 @@
 		margin-top: 15px;
 	}
 
-	.text-block h2 
+	.text-block h1,
+	.text-block .title
 	{
-		font-size: 28px;
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+
+	.text-block h2
+	{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.text-block h3
+	{
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+
+	.text-block h4
+	{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.text-block h5
+	{
+		margin-bottom: 15px;
+	}
+
+	.text-block h6
+	{
+		margin-bottom: 15px;
+	}
+
+	.text-block ul{
+		font-size: 16px;
 	}
 
 	.main-title
@@ -661,6 +695,49 @@
 
 
 	.pagintion{
+		margin-top: 25px;
+	}
+
+
+	.inform-section .text-block{
+		max-width: none;
+	}
+
+	.inform-section__colr img{
+		min-height: 1px;
+		height: auto;
+		aspect-ratio: 1/0.54;
+	}
+
+
+	.interface__top{
+		margin-bottom: 25px;
+	}
+
+	.interface__btn{
+		width: 100%;
+		margin: 15px 0 0;
+	}
+
+	.interface_bg{
+		padding: 15px 5px;
+		border-radius: 10px;
+	}
+
+	.interface__slider .swiper-slide{
+		width: 224px;
+	}
+
+	.interface__slider_big .swiper-slide{
+		width: 270px;
+	}
+
+	.interface__link{
+		margin-top: 25px;
+	}
+
+
+	.interface + .interface{
 		margin-top: 25px;
 	}
 

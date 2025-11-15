@@ -6,9 +6,25 @@
 	}
 
 
+	.text-block h1,
+	.text-block .title
+	{
+		font-size: 38px;
+	}
+
 	.text-block h2
 	{
-		font-size: 32px;
+		font-size: 34px;
+	}
+
+	.text-block h3
+	{
+		font-size: 28px;
+	}
+
+	.text-block h4
+	{
+		font-size: 24px;
 	}
 
 	
@@ -791,6 +807,79 @@
 
 	.pagintion{
 		margin-top: 35px;
+	}
+
+
+	.inform-section__flex{
+		flex-wrap: wrap;
+	}
+
+	.inform-section__colr{
+		width: 100%;
+	}
+
+
+	.page-top__coll{
+		width: 100%;
+		max-width: none;
+	}
+
+	.page-top__cols .text-block{
+		max-width: none;
+	}
+
+	.page-top__colr{
+		width: 100%;
+		max-width: none;
+		margin-top: 25px;
+	}
+
+
+	.interface_bg{
+		max-width: calc(100% - 20px);
+		padding: 35px 10px 20px;
+		border-radius: 15px;
+	}
+
+	.interface__top{
+		max-width: none;
+		margin-bottom: 30px;
+	}
+
+	.interface__slider{
+		width: 100%;
+		max-width: none;
+		overflow: visible;
+	}
+
+	.interface__slider .swiper-wrapper{
+		min-height: 1px;
+	}
+
+	.interface__slider .swiper-slide{
+		width: 296px;
+	}
+
+	.interface__slider_big .swiper-slide{
+		width: 443px;
+	}
+
+	.interface__line{
+		display: none;
+	}
+
+	.interface__video{
+		display: none;
+	}
+
+	.interface__link{
+		order: 3;
+		margin: 35px 0 0;
+	}
+
+
+	.interface + .interface{
+		margin-top: 60px;
 	}
 
 

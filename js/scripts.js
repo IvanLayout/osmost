@@ -208,8 +208,8 @@ $(() => {
 		})
 	}
 
-	if ($('.interface__slider').length) {
-		new Swiper('.interface__slider', {
+	if ($('.interface__slider_js').length) {
+		new Swiper('.interface__slider_js', {
 			loop: false,
 			watchSlidesProgress: true,
 			watchOverflow: true,
@@ -238,7 +238,7 @@ $(() => {
 					slidesPerView: 'auto'
 				},
 				'768': {
-					spaceBetween: 15,
+					spaceBetween: 22,
 					slidesPerView: 'auto'
 				},
 				'1024': {
@@ -252,6 +252,55 @@ $(() => {
 				'1440': {
 					spaceBetween: 22,
 					slidesPerView: 3,
+				},
+			}
+		})
+	}
+
+	if ($('.interface__slider_js2').length) {
+		new Swiper('.interface__slider_js2', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				},
+				'1300': {
+					spaceBetween: 20,
+					slidesPerView: 2,
+				},
+				'1440': {
+					spaceBetween: 22,
+					slidesPerView: 2,
 				},
 			}
 		})

@@ -776,6 +776,16 @@ button
 	color: #fff;
 }
 
+.text-block._white h1,
+.text-block._white .title,
+.text-block._white h2,
+.text-block._white h3,
+.text-block._white h4,
+.text-block._white h5,
+.text-block._white h6{
+	color: #fff;
+}
+
 .text-block h1,
 .text-block .title
 {
@@ -786,17 +796,47 @@ button
 	margin-bottom: 25px;
 }
 
-.text-block._white h1,
-.text-block._white .title,
-.text-block._white h2{
-	color: #fff;
-}
-
 .text-block h2
 {
 	font-weight: 600;
 	font-size: 38px;
 	line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.text-block h3
+{
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.text-block h4
+{
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.text-block h5
+{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.text-block h6
+{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.35;
 
     margin-bottom: 25px;
 }
@@ -3679,15 +3719,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	overflow: hidden;
 }
 
+
 /*------------
     interface
 ------------*/
+.interface + .interface{
+	margin-top: 50px;
+}
 
 .interface_bg
 {
 	background: #423945;
 	border-radius: 30px;
 	padding: 55px 0;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .interface__flex
@@ -3695,7 +3742,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	justify-content: space-between;
 	align-items: stretch;
 	align-content: stretch;
-	flex-wrap: nowrap;
 }
 
 .interface__top
@@ -3706,6 +3752,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 32px;
+
+	max-width: calc(100% - 180px);
 }
 
 .interface__btn
@@ -3715,8 +3763,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .interface__link
 {
+	align-self: center;
 	margin-left: auto;
 	font-size: 14px;
+	margin-bottom: 32px;
 }
 
 .interface__link .btn-arrow svg
@@ -3727,6 +3777,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .interface__slider
 {
 	max-width: 930px;
+
+	width: calc((100%/4)*3 - 24px);
+}
+
+.interface__slider_big{
+	max-width: 908px;
+	width: calc(66.7% - 24px);
+}
+
+.interface__slider .swiper-wrapper{
+	min-height: 100%;
+}
+
+.interface__slider .swiper-slide{
+	height: auto;
+	display: flex;
 }
 
 .interface__img
@@ -3734,7 +3800,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: block;
 	text-decoration: none;
 	width: 100%;
-	aspect-ratio: 296 / 599;
 	border-radius: 15px;
 }
 
@@ -3745,6 +3810,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	aspect-ratio: 296 / 599;
 	object-fit: cover;
 	border-radius: 15px;
+	min-height: 100%;
+}
+
+.interface__slider_big .interface__img img{
+	aspect-ratio: 443 / 315;
 }
 
 .interface__video
@@ -3753,8 +3823,13 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: relative;
 	text-decoration: none;
 	border-radius: 15px;
-	margin-left: auto;
-	width: 296px;
+	max-width: 296px;
+	width: calc(100%/4 - 21px);
+}
+
+.interface__video_big{
+	width: calc(33.3% - 21px);
+	max-width: 443px;
 }
 
 .interface__video img
@@ -3764,6 +3839,34 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	aspect-ratio: 296 / 599;
 	object-fit: cover;
 	border-radius: 15px;
+	min-height: 100%;
+}
+
+.interface__video_big img{
+	aspect-ratio: 443 / 315;
+}
+
+.interface__line{
+	width: 45px;
+	position: relative;
+	padding: 0 22px;
+	margin: 0 auto;
+}
+
+.interface__line::before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: calc(1/2);
+	transform: translateY(-50%);
+	width: 1px;
+	height: calc(100% - 172px);
+	background: #2E2631;
+}
+
+.interface__line_small:before{
+	height: calc(100% - 40px);
 }
 
 /*------------
@@ -5060,6 +5163,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .inform-section__flex{
 	flex-wrap: nowrap;
 	gap: 25px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.inform-section .text-block{
+	max-width: 387px;
 }
 
 .inform-section .text-block ul{
@@ -5074,6 +5183,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	-webkit-clip-path: url(../images/sprite.svg#infoClip);
 	clip-path: url(../images/sprite.svg#infoClip);
 	background: #423945;
+	padding: 35px 35px 25px 35px;
+	width: 100%;
 }
 
 .inform-section__colr{
@@ -5086,6 +5197,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	object-fit: cover;
 	height: 318px;
 	border-radius: 15px;
+	display: block;
+	min-height: 100%;
 }
 
 /*------------
