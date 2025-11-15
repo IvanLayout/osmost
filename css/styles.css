@@ -4517,6 +4517,45 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 /*------------
+    func-soft
+------------*/
+
+.func-soft__top
+{
+	width: calc(60% - 16px);
+}
+
+.func-soft__bg
+{
+	color: #fff;
+	padding: 35px 23px 81px 35px;
+	background: #423945;
+	width: calc(73.5% - 15px);
+	margin-top: 94px;
+}
+
+.func-soft__video-box
+{
+	width: calc(26.5% - 20px);
+}
+
+.func-soft__video
+{
+	display: block;
+	position: relative;
+	transition: .2s linear;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.func-soft__video img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 350 / 680;
+	object-fit: cover;
+}
+/*------------
     commit
 ------------*/
 .modal-search{
