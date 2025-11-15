@@ -4309,6 +4309,135 @@ input[type=checkbox]:checked + .checkbox-btn__text
 		color: #6AA589;
 	}
 }
+
+
+/*------------
+    demo-version
+------------*/
+
+.software-info__items
+{
+	margin: -18px 0 0 -18px;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.software-info__item
+{
+	width: calc(100%/3 - 18px);
+	margin: 18px 0 0 18px;
+	padding: 16px 30px 16px 20px;
+	background: #fff;
+	border-radius: 5px;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.software-info__desc
+{
+	font-size: 20px;
+	line-height: 1.1;
+	font-weight: 500;
+
+	width: calc(100% - 131px);
+}
+
+.software-info__desc a
+{
+	color: #6AA589;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+	transition: border .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.software-info__desc a:hover
+	{
+		border-color: #6AA589;
+	}
+}
+
+.software-info__icon
+{
+	height: 106px;
+	width: 106px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+
+.software-info__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+/*------------
+    demo-version
+------------*/
+
+.demo-version__items
+{
+	margin-top: 5px;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.demo-version__item
+{
+	width: calc(50% - 10px);
+	text-decoration: none;
+	padding: 40px;
+	border-radius: 15px;
+	background: #423945;
+	color: #fff;
+	margin-top: 20px;
+
+	transition: color .2s linear;
+}
+
+@media (any-hover: hover)
+{
+	.demo-version__item:hover
+	{
+		color: #6AA589;
+	}
+}
+
+.demo-version__icon
+{
+	height: 127px;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.demo-version__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.demo-version__name
+{
+	display: block;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.1;
+	margin-top: 60px;
+}
+
 /*------------
     commit
 ------------*/
