@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Переключение IE в последнию версию, на случай если в настройках пользователя стоит меньшая -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>OSMOST</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Традиционная иконка сайта, размер 16x16, прозрачность поддерживается. Рекомендуемый формат: .ico или .png -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/response_1439.css" media="(max-width: 1439px)">
+		<link rel="stylesheet" href="css/response_1299.css" media="(max-width: 1299px)">
+		<link rel="stylesheet" href="css/response_1199.css" media="(max-width: 1199px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="(max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="(max-width: 767px)">
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)">
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- Шапка -->
+			<header class="header">
+				<div class="cont _flex">
+					<div class="header__logo">
+						<a href="/">
+							<img src="images/logo.png" alt="">
+						</a>
+					</div>
+
+					<div class="header__wrap">
+						<div class="nav-menu _flex">
+							<div class="nav-menu__item">
+								<a href="/">Продукция</a>
+							</div>
+							<div class="nav-menu__item">
+								<a href="/">Применение</a>
+							</div>
+							<div class="nav-menu__item">
+								<a href="/">Программное обеспечение</a>
+							</div>
+							<div class="nav-menu__item">
+								<a href="/">Центр поддержки</a>
+							</div>
+							<div class="nav-menu__item">
+								<a href="/">Сотрудничество</a>
+							</div>
+							<div class="nav-menu__item">
+								<a href="/">О нас</a>
+							</div>
+						</div>
+
+						<div class="header__search">
+							<button type="button" data-content="#modal-search" class="header__search-btn modal-small-btn">
+								<img data-src="images/ic_lupa.png" src="images/img_plug.png" alt="" class="lazyload">
+							</button>
+						</div>
+
+						<div class="header__phone">
+							<a href="tel:+79626856463">+7 (962) 685-64-63</a>
+						</div>
+					</div>
+
+					<div class="header__search">
+						<button type="button" data-content="#modal-search" class="header__search-btn modal-small-btn">
+							<img data-src="images/ic_lupa.png" src="images/img_plug.png" alt="" class="lazyload">
+						</button>
+					</div>
+
+					<div class="header__socials">
+						<div class="socials _flex">
+							<a href="/" target="_blank" class="socials-link">
+								<img data-src="images/ic_soc1.png" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+							<a href="/" target="_blank" class="socials-link">
+								<img data-src="images/ic_soc2.png" src="images/img_plug.png" alt="" class="lazyload">
+							</a>
+						</div>
+					</div>
+
+					<div class="header__phone">
+						<a href="tel:+79626856463">+7 (962) 685-64-63</a>
+					</div>
+
+					<div class="header__border"></div>
+
+					<button type="button" class="mob-menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+			</header>
+
+			<div id="modal-search" class="modal-search modal-wrap">
+				<div class="modal-search__wrap modal-wrap__scroll">
+					<div class="modal-block modal-search__top">
+						<div class="modal-search__flex _flex">
+							<form action="" class="form-search _flex">
+								<input type="text" value="" placeholder="Поиск по сайту" class="form-search__input">
+
+								<button type="submit" class="form-search__btn">
+									<img data-src="images/ic_lupa.png" src="images/img_plug.png" alt="" class="lazyload">
+								</button>
+							</form>
+							<button type="button" class="modal-block__close">
+								<svg>
+									<use xlink:href="images/sprite.svg#close1"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- End Шапка -->
+
+			<div class="main">
+				<section class="breadcrumbs">
+					<div class="cont">
+						<a href="/">Главная</a> <span class="breadcrumbs_sep">/</span> Программное обеспечение
+					</div>
+				</section>
+
+				<section class="soft-consists">
+					<div class="cont">
+						<h1 class="page-title">Программное обеспечение</h1>
+					</div>
+				</section>
+
+				<!-- <section class="software-info _marg">
+					<div class="cont">
+						<div class="software-info__items _flex">
+							<div class="technical__item">
+								<div class="software-info__desc"></div>
+
+								<div class="software-info__img">
+									<img data-src="images/ic_technical1.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+							<div class="technical__item">
+								<div class="software-info__desc"></div>
+
+								<div class="software-info__img">
+									<img data-src="images/ic_technical1.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+							<div class="technical__item">
+								<div class="software-info__desc"></div>
+
+								<div class="software-info__img">
+									<img data-src="images/ic_technical1.svg" src="images/img_plug.png" alt="" class="lazyload">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+				<section class="contacts _marg">
+					<div class="cont">
+						<div class="contacts__flex _flex">
+							<div class="contacts__box">
+								<div class="main-title _white">Контакты</div>
+
+								<div class="contacts__items _flex">
+									<div class="contacts__item">
+										<div class="contacts__icon">
+											<img data-src="images/ic_contacts1.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+	
+										<div class="contacts__info">
+											<div class="contacts__mail">
+												<a href="mailto:pochta@mail.ru">pochta@mail.ru</a>
+											</div>
+	
+											<div class="contacts__desc">Ежедневно с 9:00 до 20:00</div>
+										</div>
+									</div>
+	
+									<div class="contacts__item">
+										<div class="contacts__icon">
+											<img data-src="images/ic_contacts2.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+	
+										<div class="contacts__info">
+											<div class="contacts__phone">
+												<a href="tel:+79626856463">+7 (962) 685-64-63</a>
+											</div>
+										</div>
+									</div>
+	
+									<div class="contacts__item">
+										<div class="contacts__icon">
+											<img data-src="images/ic_contacts3.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+	
+										<div class="contacts__info">
+											Санкт-Петербург. Измайловский пр., д. 18, лит. Д
+										</div>
+									</div>
+	
+									<div class="contacts__item">
+										<div class="contacts__icon">
+											<img data-src="images/ic_contacts4.svg" src="images/img_plug.png" alt="" class="lazyload">
+										</div>
+	
+										<div class="contacts__info">
+											<div class="contacts__socials _flex">
+												<a href="/" target="_blank" class="contacts__socials-link">
+													<img data-src="images/ic_soc_contact1.png" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+												<a href="/" target="_blank" class="contacts__socials-link">
+													<img data-src="images/ic_soc_contact2.svg" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+												<a href="/" target="_blank" class="contacts__socials-link">
+													<img data-src="images/ic_soc_contact3.png" src="images/img_plug.png" alt="" class="lazyload">
+												</a>
+											</div>
+
+											<div class="contacts__desc">Следите за нами в соц сетях</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="contacts__map" id="map">
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae2cf93d2b3d3d279742890c2c6acd5f92020e4853cf432c4b775fce28ecafce8&amp;width=100%25&amp;height=100%25&amp;lang=ru_UA&amp;scroll=true"></script>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer class="footer">
+				<div class="cont">
+					<div class="footer__cols _flex">
+						<div class="footer__coll">
+							<div class="footer__logo">
+								<a href="/">
+									<img src="images/logo_footer.png" alt="">
+								</a>
+							</div>
+	
+							<div class="footer__copy">&copy; 2025. OSMOST. Все права защищены.</div>
+						</div>
+	
+						<div class="footer__colr">
+							<div class="footer-menu _flex">
+								<div class="footer-menu__item _mob-width">
+									<div class="footer__title">Продукция</div>
+
+									<div class="footer-menu__links">
+										<div class="footer-menu__link">
+											<a href="/">Продукты</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Центр документации</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Оборудование на тест</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Открытая линия поддержки</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="footer-menu__item _mob-width">
+									<div class="footer__title">Программное обеспечение</div>
+
+									<div class="footer-menu__links">
+										<div class="footer-menu__link">
+											<a href="/">О нашем ПО</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Примеры интерфейсов</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="footer-menu__item">
+									<div class="footer__title">Условия продажи</div>
+
+									<div class="footer-menu__links">
+										<div class="footer-menu__link">
+											<a href="/">Где купить?</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Доставка</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Гарантия</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="footer-menu__item">
+									<div class="footer__title">О нас</div>
+
+									<div class="footer-menu__links">
+										<div class="footer-menu__link">
+											<a href="/">О компании</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Контакты</a>
+										</div>
+										<div class="footer-menu__link">
+											<a href="/">Партнерская программа</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__contacts _flex">
+								<div class="footer__contacts-box">
+									<div class="footer__title">Контакты</div>
+
+									<div class="footer__contacts-info">
+										<div>ПН-ПТ 9-18</div>
+										
+										<a href="tel:+74951502725" class="footer__phone">+7 (495) 150-27-25</a>
+									</div>
+								</div>
+
+								<div class="footer__contacts-box">
+									<div class="footer__title">Социальные сети</div>
+
+									<div class="footer__socials">
+										<div class="socials footer_socials _flex">
+											<a href="/" target="_blank" class="socials-link">
+												<img data-src="images/ic_soc_big1.png" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+											<a href="/" target="_blank" class="socials-link">
+												<img data-src="images/ic_soc_big2.png" src="images/img_plug.png" alt="" class="lazyload">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="footer__bot">
+								<div class="footer__links">
+									<div class="footer__link">
+										<a href="/">Политика конфиденциальности</a>
+									</div>
+									<div class="footer__link">
+										<a href="/">Политика cookie</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div id="modal-subscribe" class="modal modal-inner">
+			<div class="modal__wrap">
+				<div class="modal-inner__title">Самое интересное</div>
+
+				<div class="modal-inner__desc">
+					Будьте в курсе последних новостей, новых поступлений и выгодных предложений
+				</div>
+
+				<form action="" class="form form-modal">
+					<div class="form__line">
+						<div class="form__field">
+							<input type="mail" value="" placeholder="Email" class="form__input">
+						</div>
+					</div>
+
+					<button type="submit" class="form__submit-btn btn-black">Подписаться</button>
+
+					<div class="form__agree form__agree-marg">
+						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="/">пользовательского соглашения</a>.
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="supports-error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/inputmask.min.js"></script>
+
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
