@@ -772,29 +772,34 @@ button
     margin-bottom: 0 !important;
 }
 
+.text-block._white{
+	color: #fff;
+}
 
 .text-block h1,
 .text-block .title
 {
-	color: #2c2828;
-	font-size: 40px;
-    line-height: 1.1;
-    font-family: var(--font-family);
-    font-weight: 400;
+    font-weight: 600;
+	font-size: 42px;
+	line-height: 1.1;
 
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+}
+
+.text-block._white h1,
+.text-block._white .title,
+.text-block._white h2{
+	color: #fff;
 }
 
 .text-block h2
 {
-    font-family: var(--font-family);
-	font-weight: 500;
-	font-size: 32px;
+	font-weight: 600;
+	font-size: 38px;
 	line-height: 1.1;
 
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
-
 
 .text-block p
 {
@@ -811,65 +816,29 @@ button
     border-radius: 10px;
 }
 
-.text-block * + img
-{
-	margin-top: 20px;
-}
-
 .text-block ul
 {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.1;
 }
 
 .text-block ul li
 {
     position: relative;
 
-    margin-left: 21px;
-
-	color: rgba(44, 41, 39, 0.7);
+    margin-left: 20px;
 }
 
 .text-block ul li::marker{
-	color: #282828;
+	color: #6AA589;
 }
 
 .text-block ul li + li
 {
-	margin-top: 10px;
+	margin-top: 15px;
 }
-
-.text-block__grid{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 16px;
-	margin-bottom: 40px;
-}
-
-.text-block * + .text-block__grid{
-	margin-top: 40px;
-}
-
-.text-block__grid .text-block__item img{
-	margin: 0;
-	object-fit: cover;
-	min-height: 100%;
-}
-
-
-.text-block__cols
-{
-	justify-content: space-between;
-	/* max-width: 1055px; */
-}
-
-.text-block__col
-{
-	width: calc(50% - 10px);
-	/* max-width: 480px; */
-}
-
-
 
 .text-block ol
 {
@@ -906,7 +875,6 @@ button
     counter-increment: li;
 }
 
-
 .text-block a
 {
 	font-weight: 600;
@@ -915,7 +883,6 @@ button
 	border-bottom: 1px solid currentColor;
 	transition: border .2s linear;
 }
-
 
 .text-block._white a
 {
@@ -4873,6 +4840,38 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
+}
+
+
+.inform-section__flex{
+	flex-wrap: nowrap;
+	gap: 25px;
+}
+
+.inform-section .text-block ul{
+	list-style-type: square;
+}
+
+.inform-section .text-block ul li::marker{
+	border-radius: 1px;
+}
+
+.inform-section__coll{
+	-webkit-clip-path: url(../images/sprite.svg#infoClip);
+	clip-path: url(../images/sprite.svg#infoClip);
+	background: #423945;
+}
+
+.inform-section__colr{
+	width: 59.36%;
+	flex-shrink: 0;
+}
+
+.inform-section__colr img{
+	width: 100%;
+	object-fit: cover;
+	height: 318px;
+	border-radius: 15px;
 }
 
 /*------------
