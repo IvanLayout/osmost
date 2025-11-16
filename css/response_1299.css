@@ -71,8 +71,12 @@
 
 	.advantages
 	{
-		margin-top: 60px;
 		padding-top: 35px;
+	}
+
+	.advantages__marg
+	{
+		margin-top: 60px;
 	}
 	
 	.advantages__col 
