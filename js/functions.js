@@ -138,6 +138,8 @@ $(() => {
 		}, 1000)
 	}
 
+	// Кастомный select
+	$('select').niceSelect()
 
 	// Аккордион
 	$('body').on('click', '.accordion__title', function(e) {
