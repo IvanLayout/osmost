@@ -884,6 +884,47 @@
 		width: 215px;
 	}
 
+	.checkbox_marg{
+		margin-top: 15px;
+	}
+
+	.form__submit_marg{
+		margin-top: 15px;
+	}
+
+
+	.modal{
+		width: 300px;
+		border-radius: 10px;
+	}
+
+	.modal__title{
+		padding: 25px 10px;
+		font-size: 24px;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.modal__pad{
+		padding: 15px 10px;
+	}
+
+	.fancybox__slide .f-button[data-fancybox-close]
+	{
+		top: 10px;
+		right: 10px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.fancybox__slide .f-button[data-fancybox-close] svg{
+		width: 16px;
+		height: 16px;
+	}
+
+	.checkbox br{
+		display: none;
+	}
+
 
 	/*------------
 		footer

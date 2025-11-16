@@ -689,27 +689,36 @@
 			</footer>
 		</div>
 
-		<div id="modal-subscribe" class="modal modal-inner">
+		<div id="modal-request" class="modal">
 			<div class="modal__wrap">
-				<div class="modal-inner__title">Самое интересное</div>
+				<div class="modal__title">Оставить заявку</div>
 
-				<div class="modal-inner__desc">
-					Будьте в курсе последних новостей, новых поступлений и выгодных предложений
-				</div>
-
-				<form action="" class="form form-modal">
-					<div class="form__line">
-						<div class="form__field">
-							<input type="mail" value="" placeholder="Email" class="form__input">
+				<div class="modal__pad">
+					<form action="" class="form">
+						<div class="form__line">
+							<div class="form__field">
+								<input type="text" value="" placeholder="Как вас зовут?" class="form__input">
+							</div>
 						</div>
-					</div>
+						<div class="form__line">
+							<div class="form__field">
+								<input type="tel" value="" placeholder="+7 999 999-99-99" data-mask="+7 999 999-99-99" class="form__input">
+							</div>
+						</div>
+						<div class="checkbox checkbox_marg">
+							<label class="checkbox__label">
+								<input type="checkbox" name="">
 
-					<button type="submit" class="form__submit-btn btn-black">Подписаться</button>
-
-					<div class="form__agree form__agree-marg">
-						Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="/">пользовательского соглашения</a>.
-					</div>
-				</form>
+								<span class="checkbox__text">
+									Нажимая на кнопку, вы соглашаетесь на <a href="/" target="_blank">обработку <br>персональных данных</a> и с <a href="/" target="_blank">политикой конфиденциальности</a>
+								</span>
+							</label>
+						</div>
+						<div class="form__submit form__submit_marg">
+							<button type="submit" class="form__submit-btn btn-red">Оставить заявку</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 
