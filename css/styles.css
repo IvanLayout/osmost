@@ -4339,6 +4339,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding: 20px 15px;
 	background: #2E2631;
 	border-radius: 15px;
+
+	display: flex;
+	flex-direction: column;
 }
 
 .soft-consists__icon
@@ -4365,6 +4368,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	line-height: 1;
 	font-weight: 500;
 	margin-top: 20px;
+
+	flex: 1 0 auto;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
 }
 
 .soft-consists__name a
@@ -4389,7 +4400,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .firmware__items
 {
 	display: grid;
-	/* grid-template-columns: 1fr 1fr 2fr; */
 	grid-template-columns: calc(30.5% - 12px) calc(30.5% - 12px) calc(39% - 6px);
 	grid-auto-rows: auto;
 	/* align-items: start; */
@@ -4588,6 +4598,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	max-width: 704px;
 }
 
+.interface-program__icon
+{
+	height: 81px;
+}
+
 .interface-program__icon img
 {
 	display: block;
@@ -4641,6 +4656,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	width: 100%;
 	aspect-ratio: 704 / 439;
 	object-fit: cover;
+	border-radius: 10px;
 }
 
 

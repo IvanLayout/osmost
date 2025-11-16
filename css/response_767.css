@@ -598,6 +598,106 @@
 	{
 		padding-top: 0;
 	}
+
+
+	.soft-consists__bg 
+	{
+		clip-path: url('../images/sprite.svg#waveClip3_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClip3_mob');
+	}
+
+	.soft-consists__title
+	{
+		font-size: 26px;
+	}
+
+	.soft-consists__items
+	{
+		margin-top: 5px;
+	}
+
+	.soft-consists__item
+	{
+		width: calc(100% / 1 - 11px);
+		margin-top: 10px;
+	}
+
+
+	.firmware__items
+	{
+		display: block;
+	}
+
+	.firmware__item + .firmware__item
+	{
+		margin-top: 15px;
+	}
+
+	.firmware__bg-white
+	{
+		margin-top: 15px;
+		padding-bottom: 25px;
+
+		clip-path: url('../images/sprite.svg#waveClipFirmwareWhite_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareWhite_mob');
+	}
+
+	.firmware__item._green
+	{
+		padding-bottom: 30px;
+		clip-path: url('../images/sprite.svg#waveClipFirmwareGreen_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGreen_mob');
+	}
+
+	.firmware__item._grey::before
+	{
+		clip-path: url('../images/sprite.svg#waveClipFirmwareGrey_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGrey_mob');
+	}
+
+	.firmware__img
+	{
+		border-radius: 15px;
+	}
+
+
+	.interface-program__desc
+	{
+		font-size: 18px;
+	}
+
+
+	.func-soft__bg
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		clip-path: url('../images/sprite.svg#waveClipFunc_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFunc_mob');
+	}
+
+	.func-soft__col
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+
+
+	.software-info__item
+	{
+		width: calc(100% / 1 - 18px);
+	}
+
+
+	.demo-version__item
+	{
+		width: 100%;
+	}
+
+	.demo-version__item + .demo-version__item
+	{
+		margin-top: 15px;
+	}
+	
 	/*------------
 		commit
 	------------*/

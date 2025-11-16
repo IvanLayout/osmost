@@ -784,6 +784,139 @@
 	{
 		margin-top: -20px;
 	}
+
+
+	.soft-consists__bg
+	{
+		padding: 32px 15px 15px;
+	}
+
+	.soft-consists__title 
+	{
+		font-size: 20px;
+	}
+
+	.soft-consists__item
+	{
+		border-radius: 5px;
+	}
+
+	.soft-consists__name
+	{
+		font-size: 20px;
+		margin-top: 15px;
+	}
+
+
+	.firmware__big-icon
+	{
+		height: 66px;
+	}
+
+	.firmware__bg-white
+	{
+		padding: 15px 15px 17px;
+	}
+
+	.firmware__desc, 
+	.firmware__desc-big
+	{
+		font-size: 14px;
+		line-height: 1.35;
+		font-weight: 500;
+	}
+
+	.firmware__item._green
+	{
+		padding: 15px 15px 31px;
+	}
+
+	.firmware__item._grey
+	{
+		padding-left: 15px;
+		padding-right: 20px;
+		padding-bottom: 16px;
+	}
+
+
+	.interface-program__icon 
+	{
+		height: 52px;
+	}
+
+	.interface-program__desc
+	{
+		padding: 15px;
+		font-size: 14px;
+		line-height: 1.35;
+		margin-top: 15px;
+	}
+
+
+	.interface-program__slider .swiper-slide 
+	{
+		width: 167px;
+	}
+
+	.interface-program__btn
+	{
+		margin-top: 15px;
+	}
+
+
+	.func-soft__bg
+	{
+		margin-top: 15px;
+		padding: 15px 15px 25px;
+	}
+
+	.func-soft__title
+	{
+		font-size: 20px;
+		max-width: 181px;
+	}
+
+	.func-soft__title br
+	{
+		display: none;
+	}
+
+
+	.func-soft__cols
+	{
+		margin-top: 5px;
+	}
+
+	.func-soft__item
+	{
+		margin-top: 8px;
+		font-size: 14px;
+		line-height: 1.35;
+	}
+
+
+	.demo-version__item
+	{
+		border-radius: 10px;
+	}
+
+	.demo-version__icon
+	{
+		height: 92px;
+	}
+
+	.demo-version__name
+	{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+	.interface-program__slider .slider-button-prev._dark.swiper-button-disabled,
+	.interface-program__slider .slider-button-next._dark.swiper-button-disabled 
+	{
+		border-color: #423945;
+		background: #423945;
+	}
 	/*------------
 		commit
 	------------*/

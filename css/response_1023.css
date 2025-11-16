@@ -765,6 +765,173 @@
 	{
 		margin-top: -15px;
 	}
+
+
+	.soft-consists__bg
+	{
+		padding-bottom: 25px;
+
+		clip-path: url('../images/sprite.svg#waveClip3_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClip3_tablet');
+	}
+
+
+	.firmware__items
+	{
+		grid-template-columns: calc(43.2% - 10px) calc(56.8% - 10px);
+		gap: 20px;
+	}
+
+	.firmware__item._big 
+	{
+		grid-column: 2;
+		grid-row: 2 / 4;
+	}
+
+	.firmware__bg-white
+	{
+		padding: 25px 25px 22px;
+
+		clip-path: url('../images/sprite.svg#waveClipFirmwareWhite_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareWhite_tablet');
+	}
+
+	.firmware__desc-marg, 
+	.firmware__desc-marg2
+	{
+		margin-top: 25px;
+	}
+
+	.firmware__desc, 
+	.firmware__desc-big
+	{
+		font-size: 20px;
+	}
+
+	.firmware__item._green
+	{
+		padding: 25px 25px 20px;
+		clip-path: url('../images/sprite.svg#waveClipFirmwareGreen_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGreen_tablet');
+	}
+
+	.firmware__item._grey
+	{
+		padding-top: 25px;
+	}
+
+	.firmware__item._grey::before
+	{
+		height: 100%;
+
+		clip-path: url('../images/sprite.svg#waveClipFirmwareGrey_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGrey_tablet');
+	}
+
+
+	.interface-program__iteml
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.interface-program__desc
+	{
+		padding: 25px;
+		font-size: 20px;
+	}
+
+	.interface-program__itemr
+	{
+		margin-top: 25px;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.interface-program__desc._tablet-width
+	{
+		max-width: 570px;
+	}
+
+
+	.func-soft .cont
+	{
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.func-soft__top
+	{
+		width: 100%;
+		float: none;
+	}
+
+	.func-soft__bg
+	{
+		width: 100%;
+		float: none;
+		padding: 35px 35px 66px;
+
+		clip-path: url('../images/sprite.svg#waveClipFunc_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipFunc_tablet');
+	}
+
+	.func-soft__video-box
+	{
+		width: 100%;
+		max-width: 350px;
+		float: none;
+		order: 3;
+		margin-top: 25px;
+	}
+
+
+	.software-info__items 
+	{
+		margin-top: -18px;
+		margin-left: -18px;
+	}
+
+	.software-info__item 
+	{
+		margin-top: 18px;
+		margin-left: 18px;
+		width: calc(100% / 3 - 18px);
+		padding: 15px;
+		flex-direction: column;
+		align-items: flex-start;
+		align-content: flex-start;
+	}
+
+	.software-info__desc
+	{
+		width: 100%;
+		flex: 1 0 auto;
+	}
+
+	.software-info__icon
+	{
+		margin-top: 25px;
+		width: 106px;
+		height: 106px;
+		justify-content: flex-start;
+		align-items: flex-end;
+		align-content: flex-end;
+	}
+
+
+	.demo-version__item
+	{
+		padding: 25px;
+	}
+
+	.demo-version__name
+	{
+		margin-top: 30px;
+	}
 	/*------------
 		commit
 	------------*/

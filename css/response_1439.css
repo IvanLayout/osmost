@@ -48,6 +48,12 @@
 		font-size: 30px;
 	}
 
+
+	.software-info__item
+	{
+		padding-right: 16px;
+	}
+
 	/*------------
 		commit
 	------------*/

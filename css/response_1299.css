@@ -160,6 +160,42 @@
 	{
 		font-size: 26px;
 	}
+
+
+	.soft-consists__bg
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.firmware__desc-marg,
+	.firmware__desc-marg2 
+	{
+		margin-top: 30px;
+	}
+
+	.firmware__desc-big
+	{
+		font-size: 22px;
+	}
+
+
+	.func-soft__bg
+	{
+		margin-top: 60px;
+	}
+
+
+	.software-info__desc
+	{
+		width: calc(100% - 100px);
+	}
+
+	.software-info__icon
+	{
+		height: 90px;
+		width: 90px;
+	}
 	/*------------
 		commit
 	------------*/

@@ -265,6 +265,96 @@
 	{
 		width: calc(52% - 20px);
 	}
+
+
+	.soft-consists__bg
+	{
+		padding-top: 45px;
+	}
+
+	.soft-consists__items
+	{
+		margin-left: -11px;
+	}
+
+	.soft-consists__item
+	{
+		width: calc(100% / 3 - 11px);
+		margin-top: 11px;
+		margin-left: 11px;
+	}
+
+
+	.firmware__bg-white
+	{
+		padding: 20px;
+	}
+
+	.firmware__item._green
+	{
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 60px;
+	}
+
+	.firmware__desc-marg, 
+	.firmware__desc-marg2 
+	{
+		margin-top: 20px;
+	}
+
+	.firmware__desc,
+	.firmware__desc-big
+	{
+		font-size: 18px;
+	}
+
+
+	.interface-program__desc
+	{
+		font-size: 18px;
+		padding: 20px;
+	}
+
+
+	.func-soft__bg
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: 40px;
+	}
+	
+	.func-soft__item
+	{
+		font-size: 16px;
+	}
+
+
+	.software-info__items
+	{
+		margin-top: -10px;
+		margin-left: -10px;
+	}
+
+	.software-info__item
+	{
+		margin-top: 10px;
+		margin-left: 10px;
+		width: calc(100% / 3 - 10px);
+	}
+
+	.software-info__desc 
+	{
+		width: calc(100% - 80px);
+		font-size: 18px;
+	}
+
+	.software-info__icon 
+	{
+		height: 70px;
+		width: 70px;
+	}
 	/*------------
 		commit
 	------------*/
