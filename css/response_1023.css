@@ -552,9 +552,9 @@
 		-webkit-clip-path: url('../images/sprite.svg#waveClipBgTablet');
 	}
 	
-	.main-form_marg
+	.test-drive__top
 	{
-		margin-top: 315px;
+		padding-bottom: 315px;
 	}
 
 	.main-form__flex .form__line

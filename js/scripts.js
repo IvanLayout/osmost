@@ -485,6 +485,81 @@ $(window).on('load', () => {
 	setTimeout(function(){
 		setHeight($('.advantages__items .advantages__box'))
 	}, 100)
+
+
+	let testDriveAnim = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".test-drive",
+			scrub: true,
+			start: "top center",
+			end: "bottom bottom",
+			// pin: true,
+			// markers: true,
+			onToggle: (self) => {
+				// if (self.isActive == true ){
+				// 	$('.test-drive__wrap').addClass('_start')
+				// 	$('.test-drive__wrap').addClass('_bot')
+				// } else {
+				// 	$('.test-drive__wrap').removeClass('_start')
+				// }
+			},
+			onUpdate: (self) => {
+				// if( self.progress == 1 ){
+				// 	let parentTop = $('.test-drive__anim').offset().top;
+				// 	let childTop  = $('.test-drive__wrap').offset().top;
+
+				// 	let relativeTop = childTop - parentTop;
+				// 	console.log(relativeTop);
+				// 	$('.test-drive__wrap').css('transform', 'translateY('+ relativeTop +'px)')
+				// } else {
+				// 	$('.test-drive__wrap').css('transform', 'translateY(0)')
+				// 	console.log('asd');
+				// }
+
+				// if( self.progress == 0 ){
+				// 	$('.test-drive__wrap').removeClass('_bot')
+				// }
+			},
+		}
+	})
+	.fromTo('.test-drive__main-form', { y: '100%' }, { duration: 1, y: '0' })
+	// .to('.test-drive__anim', { duration: 1, 'margin-bottom': 0 });
+
+	// let testDriveAnim = gsap.timeline({
+	// 	scrollTrigger: {
+	// 		trigger: ".test-drive",
+	// 		scrub: true,
+	// 		start: "top top",
+	// 		end: "top bottom",
+	// 		pin: ".test-drive__wrap",
+	// 		markers:true,
+	// 		onToggle: (self) => {
+	// 			$('.test-drive').toggleClass('index', self.isActive);
+	// 		},
+			// onEnter: () => {
+			// 	if ( !$('.line-svg').hasClass('_active') ){
+			// 		$('.line-svg').addClass('_active')
+			// 		myVivus.play();
+			// 	}
+
+			// 	if ( !$('.main-about').hasClass('_start') ){
+			// 		$('.main-about').addClass('_start')
+			// 	}
+			// },
+			// onToggle: (self) => {
+			// 	$('.main-about').toggleClass('index', self.isActive);
+			// },
+	// 	}
+	// });
+
+	// testDriveAnim
+    // .add([
+    //   TweenMax.to('.main-about__item1 .main-about__name span', { duration: 1, opacity: 0 }),
+    //   TweenMax.to('.main-about__item1 .main-about__img3 img', { duration: 1, opacity: 0, scale: 1.5, x: '60%', filter: 'blur(10px)' }),
+    //   TweenMax.to('.main-about__item1 .main-about__img2 img', { duration: 1, opacity: 0, scale: 1.5, y: '40%', filter: 'blur(10px)' }),
+    //   TweenMax.to('.main-about__item1 .main-about__img1 img', { duration: 1, opacity: 0, scale: 1.5, y: '-50%', filter: 'blur(10px)' }),
+    //   TweenMax.to('.main-about__item1 .main-about__coll', { duration: 1, opacity: 0 })
+    // ])
 });
 
 
