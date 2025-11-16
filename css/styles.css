@@ -3039,6 +3039,18 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
+.main-form__choice
+{
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.amount.amount_bg .amount__val
+{
+	background: #F5F5F5;
+}
+
 .affiliate-form__flex .form__submit-btn
 {
 	width: 230px;
@@ -5394,76 +5406,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	font-weight: 500;
 }
 
-
-/*------------
-    text-illustration
-------------*/
-
-.text-illustration__flex
-{
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
-}
-
-.text-illustration__bg
-{
-	width: calc(40% - 12.5px);
-	background: #fff;
-	border-radius: 10px;
-	padding: 25px;
-}
-
-.text-illustration__box-img
-{
-	width: calc(60% - 12.5px);
-}
-
-.text-illustration__img
-{
-	position: relative;
-	min-height: 100%;
-}
-
-.text-illustration__img img
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	display: block;
-
-	width: 100%;
-	height: 100%;
-
-	border-radius: 10px;
-
-	object-fit: cover;
-}
-
-/*------------
-    gallery
-------------*/
-
-.gallery__slider
-{
-	margin-top: 35px;
-}
-
-.gallery__img
-{
-	display: block;
-	text-decoration: none;
-}
-
-.gallery__img img
-{
-	display: block;
-	width: 100%;
-	aspect-ratio: 333 / 296;
-	object-fit: cover;
-	border-radius: 5px;
-}
 /*------------
     commit
 ------------*/
