@@ -355,6 +355,40 @@
 		height: 70px;
 		width: 70px;
 	}
+
+
+	.affiliate-form__cols .main-form 
+	{
+		width: calc(60% - 15px);
+	}
+
+	.affiliate-form__img 
+	{
+		width: calc(40% - 15px);
+	}
+
+
+	.control-cap__coll 
+	{
+		width: calc(100% - 370px);
+	}
+
+	.control-cap__colr 
+	{
+		width: 350px;
+	}
+
+	.control-cap__desc
+	{
+		font-size: 18px;
+	}
+
+
+	.application__items-inner .application__item,
+	.application__items-four .application__item
+	{
+		width: calc(100% / 2 - 16px);
+	}
 	/*------------
 		commit
 	------------*/

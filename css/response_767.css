@@ -299,6 +299,11 @@
 		height: auto;
 	}
 
+	.application__items-four .application__item
+	{
+		width: calc(100% / 1 - 15px);
+	}
+
 	.application__slider
 	{
 		overflow: visible;
@@ -387,6 +392,27 @@
 	.main-form{
 		clip-path: url('../images/sprite.svg#waveClip_mob');
 		-webkit-clip-path: url('../images/sprite.svg#waveClip_mob');
+	}
+
+	.main-form._main-form_inner
+	{
+		padding-top: 40px;
+		clip-path: url('../images/sprite.svg#waveClipBg_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipBg_mob');
+	}
+
+	.main-form._main-form_small
+	{
+		padding-top: 55px;
+		padding-bottom: 35px;
+		clip-path: url('../images/sprite.svg#waveClipSmall_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipSmall_mob');
+	}
+
+	.main-form__flex .form__line.form__line_marg 
+	{
+		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.test-drive__img 
@@ -716,6 +742,18 @@
 		margin-top: 15px;
 	}
 	
+
+	.control-cap__item 
+	{
+		width: 100%;
+	}
+
+
+	.system-func__bg
+	{
+		clip-path: url('../images/sprite.svg#waveClipSystem_mob');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipSystem_mob');
+	}
 	/*------------
 		commit
 	------------*/

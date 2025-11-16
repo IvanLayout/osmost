@@ -261,12 +261,14 @@
 		padding: 35px 35px 30px;
 	}
 
-	.application__items-inner 
+	.application__items-inner,
+	.application__items-four
 	{
 		margin: -15px 0 0 -15px;
 	}
 
-	.application__items-inner .application__item
+	.application__items-inner .application__item,
+	.application__items-four .application__item
 	{
 		width: calc(100% / 2 - 15px);
 		margin-top: 15px;
@@ -543,10 +545,21 @@
 		clip-path: url('../images/sprite.svg#waveClip_tablet');
 		-webkit-clip-path: url('../images/sprite.svg#waveClip_tablet');
 	}
+
+	.main-form._main-form_inner
+	{
+		clip-path: url('../images/sprite.svg#waveClipBgTablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipBgTablet');
+	}
 	
 	.main-form_marg
 	{
 		margin-top: 315px;
+	}
+
+	.main-form__flex .form__line
+	{
+		width: 100%;
 	}
 
 	.affiliate-form__top._max-width
@@ -580,6 +593,24 @@
 		width: 200px;
 		order: 4;
 		margin-top: 28px;
+	}
+
+
+	.affiliate-form__cols .main-form
+	{
+		width: 100%;
+	}
+
+	.affiliate-form__img
+	{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.affiliate-form__img img
+	{
+		position: relative;
+		aspect-ratio: 748 / 594;
 	}
 
 
@@ -935,6 +966,44 @@
 	.demo-version__name
 	{
 		margin-top: 30px;
+	}
+
+
+	.control-cap__bg
+	{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.control-cap__coll
+	{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.control-cap__colr
+	{
+		width: 100%;
+		margin-top: 25px;
+	}
+
+	.control-cap__img
+	{
+		aspect-ratio: 385 / 250;
+	}
+
+
+	.system-func__bg
+	{
+		padding: 35px 25px;
+
+		clip-path: url('../images/sprite.svg#waveClipSystem_tablet');
+		-webkit-clip-path: url('../images/sprite.svg#waveClipSystem_tablet');
+	}
+
+	.application__items.application__items-marg 
+	{
+		margin-top: 10px;
 	}
 	/*------------
 		commit

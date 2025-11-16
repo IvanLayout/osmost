@@ -56,17 +56,56 @@
 		font-size: 14px;
 		margin-bottom: 20px;
 	}
-
+	
 
 	.form__line
 	{
 		margin-bottom: 18px;
 	}
 
+	.form__line.form__line_marg
+	{
+		margin-bottom: 15px;
+	}
+
 	.form .form__input
 	{
 		font-size: 12px;
 		font-weight: 500;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.form .form__textarea
+	{
+		font-size: 12px;
+		font-weight: 500;
+		padding: 15px;
+		height: 145px;
+	}
+
+	.select-wrap .nice-select .current
+	{
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	.select-wrap .nice-select .list .list_item
+	{
+		font-size: 12px;
+	}
+
+	.radios
+	{
+		width: 100%;
+		max-width: 100%;
+		margin-top: 0;
+		margin-right: 0;
+	}
+
+	.radio__text
+	{
+		line-height: 20px;
 	}
 
 	.main-title
@@ -426,6 +465,11 @@
 	.main-form
 	{
 		padding: 35px 15px 24px;
+	}
+
+	.main-form__flex
+	{
+		margin-top: 15px;
 	}
 
 	.affiliate-form__desc
@@ -917,6 +961,81 @@
 		border-color: #423945;
 		background: #423945;
 	}
+
+
+	.affiliate-form__img img
+	{
+		aspect-ratio: 300 / 347;
+	}
+
+
+	.control-cap__bg
+	{
+		border-radius: 0;
+		padding: 0;
+		background: none;
+	}
+
+	.control-cap__coll
+	{
+		border-radius: 10px;
+		padding: 15px;
+		background: #fff;
+	}
+
+	.control-cap__items
+	{
+		margin-top: 5px;
+	}
+
+	.control-cap__item
+	{
+		margin-top: 10px;
+		border-radius: 5px;
+		padding: 15px;
+	}
+
+	.control-cap__desc
+	{
+		margin-top: 25px;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	.control-cap__colr
+	{
+		margin-top: 15px;
+	}
+
+	.control-cap__img 
+	{
+		aspect-ratio: 300 / 310;
+	}
+
+
+	.system-func .application__icon
+	{
+		width: 25px;
+		height: 25px;
+	}
+
+	.system-func__bg
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.application__items.application__items-marg
+	{
+		margin-top: 0;
+	}
+
+	.application__desc
+	{
+		margin-top: 16px;
+		font-size: 18px;
+	}
+
 	/*------------
 		commit
 	------------*/

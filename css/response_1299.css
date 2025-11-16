@@ -203,6 +203,18 @@
 		height: 90px;
 		width: 90px;
 	}
+
+
+	.control-cap__item
+	{
+		width: calc(50% - 8px);
+	}
+
+	.system-func__bg
+	{
+		padding-left: 35px;
+		padding-right: 35px;
+	}
 	/*------------
 		commit
 	------------*/

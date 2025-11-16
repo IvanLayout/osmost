@@ -799,8 +799,6 @@ button
 {
     position: relative;
 
-    font-size: 16px;
-
     display: block;
 
     padding-left: 30px;
@@ -2549,15 +2547,16 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-content: stretch;
 }
 
-.application__items-inner
+.application__items-inner,
+.application__items-four
 {
 	justify-content: flex-start;
 	margin: -16px 0 0 -16px;
 }
 
-.application__items-marg
+.application__items.application__items-marg
 {
-	margin-top: 40px;
+	margin-top: 24px;
 }
 
 .application__item
@@ -2575,7 +2574,8 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	transition: color .2s linear, background .2s linear;
 }
 
-.application__items-inner .application__item
+.application__items-inner .application__item,
+.application__items-four .application__item
 {
 	width: calc(100%/4 - 16px);
 	margin-top: 16px;
@@ -2592,6 +2592,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
+	padding: 5px;
 
 	background: #F5F5F5;
 }
