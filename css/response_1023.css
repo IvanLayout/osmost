@@ -544,9 +544,9 @@
 		-webkit-clip-path: url('../images/sprite.svg#waveClip_tablet');
 	}
 	
-	.main-form_marg
+	.test-drive__top
 	{
-		margin-top: 315px;
+		padding-bottom: 315px;
 	}
 
 	.affiliate-form__top._max-width

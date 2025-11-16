@@ -2924,6 +2924,32 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: relative;
 }
 
+.test-drive__anim{
+	position: relative;
+	/* margin-bottom: 100vh; */
+	/* min-height: 200vh; */
+}
+
+/* .test-drive__wrap._bot{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.test-drive__wrap._start{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+} */
+
+.test-drive__top{
+	position: relative;
+	padding-bottom: 344px;
+	/* z-index: 100; */
+}
+
 .test-drive__img
 {
 	position: absolute;
@@ -2971,11 +2997,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding-bottom: 35px;
 	clip-path: url('../images/sprite.svg#waveClipBg');
 	-webkit-clip-path: url('../images/sprite.svg#waveClipBg');
-}
-
-.main-form_marg
-{
-	margin-top: 344px;
 }
 
 .main-form__btn

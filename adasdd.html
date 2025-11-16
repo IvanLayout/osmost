@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>GSAP Scroll Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #eee;
+    }
+
+    /* Верхня частина сайту */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #9be7ff, #417dff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    /* Секція де буде анімація */
+    .section {
+      position: relative;
+      height: 200vh;
+      padding-top: 200px;
+    }
+
+    .block {
+      width: 320px;
+      height: 200px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .top {
+      top: 0;
+      background: #ffcb6b;
+      z-index: 5;
+    }
+
+    .bottom {
+      top: 300px;
+      background: #ff6f69;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">Верх сайту</div>
+
+  <div class="section">
+    <div class="block top">Верхній блок (заморожується)</div>
+    <div class="block bottom">Нижній блок (заїжджає)</div>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Верхній блок — фіксується під час скролу
+    ScrollTrigger.create({
+      trigger: ".section",
+      start: "top top",
+      end: "+=400",
+      pin: ".top",
+      pinSpacing: false
+    });
+
+    // Нижній блок — під’їжджає вгору
+    gsap.to(".bottom", {
+      y: -250,
+      scrollTrigger: {
+        trigger: ".section",
+        start: "top top",
+        end: "+=400",
+        scrub: true
+      }
+    });
+  </script>
+
+</body>
+</html>
