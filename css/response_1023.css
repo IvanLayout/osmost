@@ -756,7 +756,7 @@
 		margin-top: 15px;
 	}
 
-	.features__table tr td
+	.text-block table tr td
 	{
 		vertical-align: top;
 		padding-top: 15px;
@@ -1051,6 +1051,46 @@
 
 	.interface + .interface{
 		margin-top: 60px;
+	}
+
+
+	.top-info__flex{
+		flex-wrap: wrap;
+	}
+
+	.top-info__colr{
+		width: 100%;
+		max-width: none;
+	}
+
+	.breadcrumbs.breadcrumbs_white{
+		padding-bottom: 25px;
+	}
+
+	.top-info_white{
+		padding-top: 0;
+	}
+
+
+	.text-block__col{
+		width: 100%;
+	}
+
+	.text-block__col._small{
+		width: 100%;
+	}
+
+	.text-block__col._big{
+		width: 100%;
+	}
+
+	.gallery-slider{
+		margin-top: 25px;
+		overflow: visible;
+	}
+
+	.gallery-slider .swiper-slide{
+		width: 333px;
 	}
 
 

@@ -775,7 +775,7 @@
 		padding: 15px;
 	}
 
-	.features__table tr td:first-child
+	.text-block table tr td:first-child
 	{
 		font-size: 18px;
 	}
@@ -975,6 +975,22 @@
 	.interface__slider .slider-button-next._dark.swiper-button-disabled {
 		border-color: #423945;
 		background: #423945;
+	}
+
+
+	.top-info__colr img{
+		height: auto;
+		aspect-ratio: 1/.48;
+	}
+
+	.text-block__col._white,
+	.text-block__col._light{
+		padding: 15px;
+	}
+
+
+	.gallery-slider{
+		margin-top: 15px;
 	}
 
 

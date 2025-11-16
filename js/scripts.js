@@ -379,6 +379,100 @@ $(() => {
 			}
 		})
 	}
+
+	if ($('.gallery-slider').length) {
+		new Swiper('.gallery-slider', {
+			loop: false,
+			watchSlidesProgress: true,
+			watchOverflow: true,
+			spaceBetween: 15,
+			slidesPerView: 'auto',
+			preloadImages: false,
+			lazy: {
+				loadPrevNext: true,
+				elementClass: 'lazyload',
+				enabled: true,
+				loadedClass: 'loaded',
+				checkInView: true,
+				loadOnTransitionStart: true
+			},
+			navigation: {
+				nextEl: '.slider-button-next',
+				prevEl: '.slider-button-prev'
+			},
+			breakpoints: {
+				'320': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 22,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 20,
+					slidesPerView: 4,
+				},
+				'1300': {
+					spaceBetween: 20,
+					slidesPerView: 4,
+				},
+				'1440': {
+					spaceBetween: 22,
+					slidesPerView: 4,
+				},
+			}
+		})
+	}
+
+	// Изменение количества товара
+	$('body').on('click', '.amount__btn_minus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+			input = parent.find('input')
+			inputVal = parseFloat(input.val())
+			inputText = input.data('text')
+			minimum = parseFloat(input.data('minimum'))
+			step = parseFloat(input.data('step'));
+
+		if (inputVal > minimum) {
+			input.val(inputVal - step)
+		}
+
+		if (inputVal-step == minimum) {
+			$(this).prop("disabled", true)
+		}
+
+		if(inputText){
+			input.val(inputVal - step + inputText)
+		}
+	})
+
+	$('body').on('click', '.amount__btn_plus', function (e) {
+		e.preventDefault()
+
+		let parent = $(this).closest('.amount')
+			input = parent.find('input')
+			inputVal = parseFloat(input.val())
+			inputText = input.data('text')
+			maximum = parseFloat(input.data('maximum'))
+			step = parseFloat(input.data('step'))
+
+		if (inputVal < maximum) {
+			input.val(inputVal + step)
+
+			parent.find('.amount__btn_minus').prop("disabled", false)
+		}
+
+		if(inputText){
+			input.val(inputVal + step + inputText)
+		}
+	})
 });
 
 
