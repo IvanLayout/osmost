@@ -62,9 +62,12 @@
 	{
 		margin-top: 10px;
 		width: calc(50% - 5px);
-		font-size: 23px;
 	}
 
+	.application__name
+	{
+		font-size: 23px;
+	}
 
 	.advantages
 	{

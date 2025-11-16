@@ -246,10 +246,14 @@
 
 	.application__item
 	{
-		font-size: 28px;
 		padding-bottom: 30px;
 		width: calc(50% - 7.5px);
 		margin-top: 15px;
+	}
+
+	.application__name
+	{
+		font-size: 28px;
 	}
 
 	.application__bg-inner

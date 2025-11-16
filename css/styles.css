@@ -2224,6 +2224,11 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin: -16px 0 0 -16px;
 }
 
+.application__items-marg
+{
+	margin-top: 40px;
+}
+
 .application__item
 {
 	width: calc(50% - 7.5px);
@@ -2235,9 +2240,6 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 15px;
 	border-radius: 5px;
 
-	font-size: 28px;
-	line-height: 1;
-	font-weight: 500;
 	color: #2E2631;
 	transition: color .2s linear, background .2s linear;
 }
@@ -2272,6 +2274,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .application__name
 {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 500;
+
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-end;
@@ -2280,6 +2286,22 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 	flex: 1 0 auto;
 	margin-top: 60px;
+}
+
+.application__desc
+{
+	font-size: 20px;
+	line-height: 1.1;
+	font-weight: 500;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: flex-end;
+	flex-wrap: wrap;
+
+	flex: 1 0 auto;
+	margin-top: 55px;
 }
 
 @media (any-hover: hover)
@@ -4930,6 +4952,103 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	aspect-ratio: 350 / 680;
 	object-fit: cover;
 }
+
+
+/*------------
+    system-func
+------------*/
+
+.system-func__bg
+{
+	background: #423945;
+	padding: 57px 36px 82px 40px;
+
+	clip-path: url('../images/sprite.svg#waveClipSystem');
+	-webkit-clip-path: url('../images/sprite.svg#waveClipSystem');
+}
+
+/*------------
+    control-cap
+------------*/
+
+.control-cap__bg
+{
+	padding: 35px;
+	background: #fff;
+	border-radius: 15px;
+
+	justify-content: space-between;
+}
+
+.control-cap__coll
+{
+	width: calc(100% - 415px);
+	max-width: 795px;
+}
+
+.control-cap__colr
+{
+	width: 385px;
+}
+
+.control-cap__img
+{
+	display: block;
+	width: 100%;
+	aspect-ratio: 385 / 655;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.control-cap__items
+{
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+	margin-top: 20px;
+}
+
+.control-cap__item
+{
+	background: #F5F5F5;
+	border-radius: 15px;
+	padding: 20px;
+
+	width: calc(50% - 15px);
+	margin-top: 15px;
+}
+
+.control-cap__icon
+{
+	width: 37px;
+	height: 37px;
+	
+	background: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	border-radius: 5px;
+}
+
+.control-cap__icon img
+{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.control-cap__desc
+{
+	margin-top: 29px;
+	font-size: 20px;
+	line-height: 1.1;
+	font-weight: 500;
+}
+
 /*------------
     commit
 ------------*/

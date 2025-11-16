@@ -248,12 +248,12 @@
 	.application__items-inner .application__item
 	{
 		width: 227px;
-		font-size: 20px;
 		padding-bottom: 15px;
 	}
 
 	.application__name
 	{
+		font-size: 20px;
 		margin-top: 20px;
 		min-height: 40px;
 
