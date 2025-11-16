@@ -764,6 +764,87 @@ button
 }
 
 /*------------
+    radio
+------------*/
+
+.radios
+{
+	max-width: 250px;
+	justify-content: space-between;
+	margin-top: -16px;
+	margin-right: 50px;
+}
+
+.radios__item
+{
+	width: calc(50% - 8px);
+	margin-top: 16px;
+}
+
+.radio input[type=radio]
+{
+    display: none;
+}
+
+.radio__label
+{
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+}
+
+.radio__text
+{
+    position: relative;
+
+    font-size: 16px;
+
+    display: block;
+
+    padding-left: 30px;
+}
+
+.radio__text::before
+{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #D10D1A;
+    border-radius: 50%;
+}
+
+.radio__text::after
+{
+	content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background: #D10D1A;
+	opacity: 0;
+
+	transition: opacity .2s linear;
+}
+
+input[type=radio]:checked + .radio__text::after
+{
+    opacity: 1;
+}
+
+/*------------
     select-wrap
 ------------*/
 
@@ -1302,6 +1383,12 @@ button
     background: #F5F5F5;
 	border: none;
 	resize: none;
+}
+
+.form  .form__textarea_small
+{
+	padding: 15px;
+	height: 145px;
 }
 
 .form .error,
@@ -2999,6 +3086,19 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	-webkit-clip-path: url('../images/sprite.svg#waveClipBg');
 }
 
+.main-form._main-form_small
+{
+	padding-top: 55px;
+	padding-bottom: 35px;
+	clip-path: url('../images/sprite.svg#waveClipSmall');
+	-webkit-clip-path: url('../images/sprite.svg#waveClipSmall');
+}
+
+.main-form_marg
+{
+	margin-top: 344px;
+}
+
 .main-form__btn
 {
 	margin-top: 25px;
@@ -3054,8 +3154,12 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .main-form__flex .form__line.form__line_marg
 {
-	margin-bottom: 25px;
 	width: calc(50% - 12.5px);
+}
+
+.form__line.form__line_marg
+{
+	margin-bottom: 25px;
 }
 
 
@@ -3069,6 +3173,21 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .amount.amount_bg .amount__val
 {
 	background: #F5F5F5;
+	width: 72px;
+}
+
+.main-form__choice .amount .amount__input
+{
+	height: 32px;
+	width: calc(100% - 48px);
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.main-form__choice .amount__btn
+{
+	height: 32px;
+	width: 24px;
 }
 
 .affiliate-form__flex .form__submit-btn
