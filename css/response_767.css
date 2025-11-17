@@ -467,6 +467,12 @@
 	}
 
 
+	.bg-about__img
+	{
+		display: none;
+	}
+
+
 	.about__item
 	{
 		border-radius: 10px;

@@ -3786,6 +3786,25 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 /*------------
+    bg-about
+------------*/
+
+.bg-about
+{
+	position: relative;
+}
+
+.bg-about__img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+	width: 100%;
+}
+
+/*------------
     about
 ------------*/
 
