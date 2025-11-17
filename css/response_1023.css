@@ -656,6 +656,10 @@
 	}
 
 
+	.sale-conditions__slider .swiper-overflow{
+		overflow: visible;
+	}
+
 	.sale-conditions__item
 	{
 		width: 450px;

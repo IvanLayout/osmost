@@ -3758,7 +3758,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .sale-conditions__box
 {
-	padding: 35px 44px 30px 35px;
+	padding: 35px 44px 23px 35px;
 	flex: 1 0 auto;
 }
 
@@ -3769,13 +3769,14 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	align-items: flex-end;
 	align-content: flex-end;
 	flex-wrap: wrap;
+	height: 190px;
 }
 
 .sale-conditions__img.sale-conditions__img-right
 {
 	opacity: .2;
 	justify-content: flex-end;
-	padding: 19px;
+	padding: 0 19px 19px;
 }
 
 .sale-conditions__img img
