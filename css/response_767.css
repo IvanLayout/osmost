@@ -409,9 +409,13 @@
 		-webkit-clip-path: url('../images/sprite.svg#waveClipSmall_mob');
 	}
 
-	.main-form__flex .form__line.form__line_marg 
+	.main-form__flex.main-form__flex-w .form__line
 	{
 		width: 100%;
+	}
+
+	.form__line.form__line_marg
+	{
 		margin-bottom: 10px;
 	}
 

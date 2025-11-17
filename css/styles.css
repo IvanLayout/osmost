@@ -3153,7 +3153,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-bottom: 10px;
 }
 
-.main-form__flex .form__line.form__line_marg
+.main-form__flex.main-form__flex-w .form__line
 {
 	width: calc(50% - 12.5px);
 }
