@@ -5061,6 +5061,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 {
 	padding: 25px 25px 70px;
 	background: #6AA589;
+	color: currentColor;
 
 	clip-path: url('../images/sprite.svg#waveClipFirmwareGreen');
 	-webkit-clip-path: url('../images/sprite.svg#waveClipFirmwareGreen');
