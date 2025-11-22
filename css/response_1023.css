@@ -554,7 +554,7 @@
 	
 	.test-drive__top
 	{
-		padding-bottom: 315px;
+		padding-bottom: 400px;
 	}
 
 	.main-form__flex .form__line
@@ -688,7 +688,7 @@
 		-webkit-clip-path: url('../images/sprite.svg#waveClip2_tablet');
 	}
 
-	.about-info__title
+	/* .about-info__title
 	{
 		font-size: 32px;
 	}
@@ -696,7 +696,7 @@
 	.about-info__title br
 	{
 		display: none;
-	}
+	} */
 
 
 	.articles__slider .swiper-slide
@@ -745,6 +745,10 @@
 	}
 
 
+	.app-info__slider{
+		overflow: visible;
+	}
+
 	.app-info__item
 	{
 		width: 685px;
@@ -777,13 +781,21 @@
 	.product-info__image
 	{
 		width: 100%;
-		max-width: 532px;
+	}
+
+	.product-info__img{
+		padding-bottom: 0;
+		height: 387px;
 	}
 
 	.product-info__info
 	{
 		width: 100%;
 		margin-top: 35px;
+	}
+
+	.product-info__info .page-title br{
+		display: none;
 	}
 
 	.features__item + .features__item
@@ -892,6 +904,14 @@
 		max-width: 570px;
 	}
 
+	.interface-program__slider .slider-button-next{
+		right: 10px;
+	}
+
+	.interface-program__slider::before{
+		display: none;
+	}
+
 
 	.func-soft .cont
 	{
@@ -900,6 +920,10 @@
 		align-items: flex-start;
 		align-content: flex-start;
 		flex-wrap: wrap;
+	}
+
+	.func-soft .main-title br{
+		display: none;
 	}
 
 	.func-soft__top
@@ -924,7 +948,7 @@
 		max-width: 350px;
 		float: none;
 		order: 3;
-		margin-top: 25px;
+		margin: 25px auto 0;
 	}
 
 

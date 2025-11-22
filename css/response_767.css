@@ -493,10 +493,10 @@
 		padding: 25px 20px;
 	}
 
-	.about-info__title 
+	/* .about-info__title 
 	{
 		font-size: 24px;
-	}
+	} */
 
 
 	.history__slider .slider-button-next._top,
@@ -593,6 +593,11 @@
 	.product-info__info
 	{
 		margin-top: 15px;
+	}
+
+	.product-info__img{
+		padding-bottom: 72.8%;
+		height: auto;
 	}
 
 	.product-info__list

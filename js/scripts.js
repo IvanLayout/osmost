@@ -436,43 +436,44 @@ $(window).on('load', () => {
 		setHeight($('.advantages__items .advantages__box'))
 	}, 100)
 
+	if ($('.test-drive').length){
+		let testDriveAnim = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".test-drive__aasd",
+				scrub: true,
+				start: "top 80%",
+				end: "bottom bottom",
+				// pin: true,
+				// markers: true,
+				onToggle: (self) => {
+					// if (self.isActive == true ){
+					// 	$('.test-drive__wrap').addClass('_start')
+					// 	$('.test-drive__wrap').addClass('_bot')
+					// } else {
+					// 	$('.test-drive__wrap').removeClass('_start')
+					// }
+				},
+				onUpdate: (self) => {
+					// if( self.progress == 1 ){
+					// 	let parentTop = $('.test-drive__anim').offset().top;
+					// 	let childTop  = $('.test-drive__wrap').offset().top;
 
-	let testDriveAnim = gsap.timeline({
-		scrollTrigger: {
-			trigger: ".test-drive",
-			scrub: true,
-			start: "top center",
-			end: "bottom bottom",
-			// pin: true,
-			// markers: true,
-			onToggle: (self) => {
-				// if (self.isActive == true ){
-				// 	$('.test-drive__wrap').addClass('_start')
-				// 	$('.test-drive__wrap').addClass('_bot')
-				// } else {
-				// 	$('.test-drive__wrap').removeClass('_start')
-				// }
-			},
-			onUpdate: (self) => {
-				// if( self.progress == 1 ){
-				// 	let parentTop = $('.test-drive__anim').offset().top;
-				// 	let childTop  = $('.test-drive__wrap').offset().top;
+					// 	let relativeTop = childTop - parentTop;
+					// 	console.log(relativeTop);
+					// 	$('.test-drive__wrap').css('transform', 'translateY('+ relativeTop +'px)')
+					// } else {
+					// 	$('.test-drive__wrap').css('transform', 'translateY(0)')
+					// 	console.log('asd');
+					// }
 
-				// 	let relativeTop = childTop - parentTop;
-				// 	console.log(relativeTop);
-				// 	$('.test-drive__wrap').css('transform', 'translateY('+ relativeTop +'px)')
-				// } else {
-				// 	$('.test-drive__wrap').css('transform', 'translateY(0)')
-				// 	console.log('asd');
-				// }
-
-				// if( self.progress == 0 ){
-				// 	$('.test-drive__wrap').removeClass('_bot')
-				// }
-			},
-		}
-	})
-	.fromTo('.test-drive__main-form', { y: '100%' }, { duration: 1, y: '0' })
+					// if( self.progress == 0 ){
+					// 	$('.test-drive__wrap').removeClass('_bot')
+					// }
+				},
+			}
+		})
+		.fromTo('.test-drive__main-form', { y: '100%' }, { duration: 1, y: '0' })
+	}
 	// .to('.test-drive__anim', { duration: 1, 'margin-bottom': 0 });
 
 	// let testDriveAnim = gsap.timeline({
@@ -626,7 +627,7 @@ function saleConditionsSlider(){
 				}
 			}
 		})
-	} else if ($(window).width() < 480 && $('.sale-conditions__slider').hasClass('swiper-initialized')) {
+	} else if ($(window).width() < 480 && $('.sale-conditions__slider').hasClass('swiper')) {
 		if ($('.sale-conditions__slider').length === 1 && $('.sale-conditions__slider').hasClass('swiper-initialized')) {
 			saleConditionsSwiper.destroy(true, true)
 		} else if ($('.sale-conditions__slider').length >= 2 && $('.sale-conditions__slider').hasClass('swiper-initialized')) {

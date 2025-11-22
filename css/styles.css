@@ -2488,6 +2488,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	padding: 25px;
 	background: #F5F5F5;
 	border-radius: 0 15px 15px 15px;
+	overflow: hidden;
 }
 
 .application__bg
@@ -2495,6 +2496,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: relative;
 	
 	padding: 35px 35px 57px;
+	overflow: hidden;
 }
 
 .application__bg:before{
@@ -3034,7 +3036,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 
 .test-drive__top{
 	position: relative;
-	padding-bottom: 344px;
+	padding-bottom: 550px;
 	/* z-index: 100; */
 }
 
@@ -3868,7 +3870,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .about-info__title
 {
 	text-align: center;
-	font-size: 42px;
+	font-size: 24px;
 	line-height: 1.1;
 	font-weight: 600;
 }
@@ -4250,6 +4252,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: hidden;
 }
 
 .interface__flex
@@ -5203,6 +5206,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 .interface-program__slider
 {
 	overflow: visible;
+}
+
+.interface-program__slider .slider-button-next{
+	right: 0;
 }
 
 .interface-program__slider::before
