@@ -1678,7 +1678,7 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	position: absolute;
 	content: '';
 	top: 0;
-	left: calc(100%-1px);
+	left: calc(100% - 1px);
 
 	display: block;
 
@@ -3810,6 +3810,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
 /*------------
     about
 ------------*/
+.about .text-block{
+	font-size: 20px;
+}
 
 .about__items
 {
