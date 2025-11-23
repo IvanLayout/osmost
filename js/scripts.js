@@ -325,6 +325,22 @@ $(() => {
 				'320': {
 					spaceBetween: 15,
 					slidesPerView: 'auto'
+				},
+				'480': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'768': {
+					spaceBetween: 15,
+					slidesPerView: 'auto'
+				},
+				'1024': {
+					spaceBetween: 15,
+					slidesPerView: 3,
+				},
+				'1300': {
+					spaceBetween: 15,
+					slidesPerView: 3,
 				}
 			}
 		})

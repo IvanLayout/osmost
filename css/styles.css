@@ -5206,35 +5206,9 @@ input[type=checkbox]:checked + .checkbox-btn__text
 }
 
 
-.interface-program__slider
-{
-	overflow: visible;
-}
-
-.interface-program__slider .slider-button-next{
-	right: 0;
-}
-
-.interface-program__slider::before
-{
-	position: absolute;
-	content: '';
-	top: 0;
-	right: 100%;
-
-	display: block;
-
-	width: 5000px;
-	height: 100%;
-
-	background: #2E2631;
-	z-index: 5;
-}
-
 .interface-program__slider .swiper-slide 
 {
     height: auto;
-	width: 208px;
 }
 
 .interface-program__img
