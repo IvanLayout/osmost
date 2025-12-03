@@ -328,6 +328,36 @@
 		padding-bottom: 30px;
 	}
 
+	.advantages__open{
+		position: relative;
+		padding-right: 34px;
+		cursor: pointer;
+	}
+
+	.advantages__open svg{
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 10px;
+		stroke: currentColor;
+		stroke-width: 2px;
+		right: 0;
+		top: 50%;
+		margin-top: -5px;
+	}
+
+	.advantages__open._active svg{
+		transform: rotate(180deg);
+	}
+
+	.advantages__cols{
+		display: none;
+	}
+
+	.advantages__cols._show{
+		display: flex;
+	}
+
 	.advantages__items
 	{
 		columns: 1;

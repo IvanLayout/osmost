@@ -2676,6 +2676,10 @@ input[type=checkbox]:checked + .checkbox-btn__text
 	margin-top: 135px;
 }
 
+.advantages__open svg{
+	display: none;
+}
+
 .advantages__cols
 {
 	justify-content: space-between;

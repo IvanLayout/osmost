@@ -258,6 +258,19 @@ $(() => {
 			autoStart: false,
 		}
 	})
+
+
+	$('body').on('click', '.advantages__open', function(e) {
+		e.preventDefault()
+
+		if( $(this).hasClass('_active') ) {
+			$(this).removeClass('_active')
+			$(this).next().removeClass('_show')
+		} else {
+			$(this).addClass('_active')
+			$(this).next().addClass('_show')
+		}
+	})
 })
 
 
